@@ -134,7 +134,7 @@
 	<!-- index-card  -->
 	<section class="index-one pad">
 		<div class="container text-center">
-			<h2 class="small-heading h6 text-uppercase text-blu font-weight-bold text-center">services</h2>
+			<h2 class="small-heading h6 text-uppercase text-main font-weight-bold text-center">services</h2>
 			<h3 class="heading text-capitalize text-center font-weight-bold h1 text-dark">Quality Printing & <br>
 				Tailored
 				Printing
@@ -330,14 +330,22 @@
 		</div>
 	</section>
 	<!-- catagories as products -->
-	<section class="categories-section centred te-service p-0 m-0">
+	<section class="categories-section centred te-service pad">
 		<div class="container">
 			<div class="row">
+				<!-- text -->
+				<div class="sec-title">
+					<h6 class="subtitle text-uppercase font-weight-bold text-center text-main"><span
+							class="text-main"><i class="bi bi-arrow-right-square h5"></i></span> categories</h6>
+					<h2 class="title font-weight-bold text-center">The Complete Printing Solution</h2>
+					<p class="text-muted lead py-3">Explore our diverse printing categories, from business cards and
+						brochures to posters and banners—high-quality prints tailored to your needs.</p>
+				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12 categories-block">
 					<div class="categories-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
 						data-wow-duration="1500ms"
 						style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-						<div class="inner-box te-service-block">
+						<div class="inner-box te-service-block text-center">
 							<div class="shape"
 								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-5.png);">
 							</div>
@@ -361,11 +369,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 categories-block">
+				<div class="col-lg-3 col-md-6 col-12 categories-block">
 					<div class="categories-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
 						data-wow-duration="1500ms"
 						style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-						<div class="inner-box te-service-block">
+						<div class="inner-box te-service-block text-center">
 							<div class="shape"
 								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-5.png);">
 							</div>
@@ -389,11 +397,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 categories-block">
+				<div class="col-lg-3 col-md-6 col-12 categories-block">
 					<div class="categories-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
 						data-wow-duration="1500ms"
 						style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-						<div class="inner-box te-service-block">
+						<div class="inner-box te-service-block text-center">
 							<div class="shape"
 								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-5.png);">
 							</div>
@@ -422,7 +430,7 @@
 					<div class="categories-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
 						data-wow-duration="1500ms"
 						style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-						<div class="inner-box te-service-block">
+						<div class="inner-box te-service-block text-center">
 							<div class="shape"
 								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-5.png);">
 							</div>
@@ -448,8 +456,804 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-12 text-center">
+					<a class="theme-btn" href="#">more categories</a>
+				</div>
+			</div>
 		</div>
 	</section>
+	<!-- projects section as gallery -->
+	<section class="project-section pad">
+		<div class="container">
+			<div class="row align-items-center mb-5">
+				<div class="col-md-6">
+					<div class="sec-title">
+						<h6 class="subtitle text-main text-uppercase font-weight-bold">
+							<span class="text-main">
+								<i class="bi bi-arrow-right-square h5"></i>
+							</span>
+							Projects
+						</h6>
+						<h2 class="te-title printpark-size-default h1 font-weight-bold">
+							Explore our Recent Projects
+						</h2>
+					</div>
+				</div>
+				<div class="col-md-6 text-md-right">
+					<a class="theme-btn d-inline-block" href="#">More Projects</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Project 1 -->
+				<div class="col-lg-4 col-md-6 col-12 mb-4">
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="570"
+									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-1.jpg"
+									class="img-fluid" alt="">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-1.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a
+										href="https://wp1.themevibrant.com/newwp/printpark/project/kraft-food-container/">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title"
+										href="https://wp1.themevibrant.com/newwp/printpark/project/kraft-food-container/">
+										Kraft Food Container
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<!-- 1 col second div -->
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="270"
+									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-4.jpg"
+									class="img-fluid" alt="">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-4.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/project/mailing-services/">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title"
+										href="https://wp1.themevibrant.com/newwp/printpark/project/mailing-services/">
+										Mailing Services
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 2nd column starts -->
+				<!-- Project 2 -->
+				<div class="col-lg-4 col-md-6 col-12 mb-4">
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="270"
+									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-2.jpg"
+									class="img-fluid" alt="">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-2.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/project/printing-services/">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title"
+										href="https://wp1.themevibrant.com/newwp/printpark/project/printing-services/">
+										Printing Services
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<!-- second column -->
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="570"
+									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-5.jpg"
+									class="img-fluid" alt="">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-5.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a
+										href="https://wp1.themevibrant.com/newwp/printpark/project/promotional-products/">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title"
+										href="https://wp1.themevibrant.com/newwp/printpark/project/promotional-products/">
+										Promotional Products
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div class="col-lg-4 col-md-6 col-12 mb-4">
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="570"
+									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-3.jpg"
+									class="img-fluid" alt="">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-3.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/project/design-services/">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title"
+										href="https://wp1.themevibrant.com/newwp/printpark/project/design-services/">
+										Design Services
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="270"
+									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-6.jpg"
+									class="img-fluid" alt="">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-6.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/project/digital-signage/">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title"
+										href="https://wp1.themevibrant.com/newwp/printpark/project/digital-signage/">
+										Digital Signage
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+	<!-- why us -- about -->
+	<section class="why-section pad">
+		<div class="container">
+			<div class="row text-center mb-4">
+				<div class="col-12">
+					<div class="sec-title">
+						<h6 class="heading6 text-main arial font-weight-bold"><i class="bi bi-arrow-right-square h6">
+							</i> Why Demo
+							Printz</h6>
+						<h2 class="font-weight-bold heading1">Deliver More than you Expect</h2>
+						<p class="text-muted">Unmatched quality, timely delivery, eco-friendly practices, and
+							exceptional customer service.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<!-- Left Column (Features) -->
+				<div class="col-12 col-md-4 col-lg-4 text-center">
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box"><i class="bi bi-stars text-main h3"></i></div>
+						<h3 class="te-title font-weight-bold">Professionalism</h3>
+						<p class="te-text text-secondary">Obligations of business frequently occur that accepted all.
+						</p>
+					</div>
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="h3 text-green bi bi-stars"></i></div>
+						<h3 class="te-title font-weight-bold">Expertise</h3>
+						<p class="te-text text-secondary">The wise man therefore always holds these matters to this
+							principle.</p>
+					</div>
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="bi bi-stars text-info h3"></i></div>
+						<h3 class="te-title font-weight-bold">Competitive Prices</h3>
+						<p class="te-text text-secondary">Charms of pleasure of the moment, that are bound to ensue.</p>
+					</div>
+				</div>
+
+				<!-- Middle Column (Image) -->
+				<div class="col-12 col-md-4 col-lg-4 text-center">
+					<div class="image-box position-relative">
+						<div class="image-shape"
+							style="background-image: url('https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-7.png');">
+						</div>
+						<figure class="image">
+							<img decoding="async" class="img-fluid rounded-circle" src="./images/pdtimg-3.png"
+								alt="Awesome Image">
+						</figure>
+					</div>
+				</div>
+
+				<!-- Right Column (Features) -->
+				<div class="col-12 col-md-4 col-lg-4 text-center">
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="bi bi-stars h3 text-main"></i></div>
+						<h3 class="te-title font-weight-bold">Quality Service</h3>
+						<p class="te-text text-secondary">Charms of pleasure of the moment, that are bound to ensue.</p>
+					</div>
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="bi bi-stars text-green h3"></i></div>
+						<h3 class="te-title font-weight-bold">Cost Effective</h3>
+						<p class="te-text text-secondary">Obligations of business frequently occur that accepted all.
+						</p>
+					</div>
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="bi bi-stars h3 text-info"></i></div>
+						<h3 class="te-title font-weight-bold">Customization</h3>
+						<p class="te-text text-secondary">The wise man therefore always holds these matters to this
+							principle.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- tab section -->
+	<section class="tab-section pad">
+		<div class="container">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs justify-content-center mb-4" id="serviceTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link text-center active" id="flyer-tab" data-toggle="tab" href="#tshirt" role="tab"
+						aria-controls="flyer" aria-selected="false">
+						<i class="fa fa-shirt tab-icon"></i>
+						<div class="mt-5">T-shirt<br>Printing</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" id="flyer-tab" data-toggle="tab" href="#flyer" role="tab"
+						aria-controls="flyer" aria-selected="false">
+						<i class="bi bi-newspaper tab-icon"></i>
+						<div>Flyer<br>Printing</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" id="poster-tab" data-toggle="tab" href="#poster" role="tab"
+						aria-controls="poster" aria-selected="false">
+						<i class="bi bi-card-heading tab-icon"></i>
+						<div>Poster<br>Printing</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" id="sticker-tab" data-toggle="tab" href="#sticker" role="tab"
+						aria-controls="sticker" aria-selected="false">
+						<i class="bi bi-tags tab-icon"></i>
+						<div>Sticker<br>Printing</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" id="postcard-tab" data-toggle="tab" href="#postcard" role="tab"
+						aria-controls="postcard" aria-selected="false">
+						<i class="bi bi-envelope-open tab-icon"></i>
+						<div>Postcard<br>Printing</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" id="books-tab" data-toggle="tab" href="#books" role="tab"
+						aria-controls="books" aria-selected="false">
+						<i class="bi bi-book tab-icon"></i>
+						<div>Book<br>Printing</div>
+					</a>
+				</li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content" id="serviceTabContent">
+				<!-- T-Shirt Printing Tab -->
+				<div class="tab-pane fade show active" id="tshirt" role="tabpanel" aria-labelledby="tshirt-tab">
+					<div class="text-center mb-4">
+						<h6 class="font-weight-bold text-main"><i class="bi bi-arrow-right-square h6">
+							</i> Our services</h6>
+						<h3 class="font-weight-bold">T-Shirt Printing</h3>
+						<p>
+							Choose the perfect design. We start at premium and go all the way to extra fancy.
+							Options include original single-sided tshirts (writeable on one side) without an envelope,
+							original double-sided tshirts (more impactful) and luxury tshirts (extra thick and
+							luxurious).
+						</p>
+					</div>
+					<div class="row">
+						<!-- Video Box -->
+						<div class="col-md-6 mb-4">
+							<div class="video-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
+									alt="Video">
+								<div class="video-overlay">
+									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
+									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
+										class="btn bg-main rounded-circle mt-3 btn-ripple">
+										<i class="bi bi-play-fill text-white h1"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Design Guideline -->
+						<div class="col-md-6">
+							<div class="mb-3">
+								<h3>Download a Design Guideline</h3>
+								<ul class="list-unstyled">
+									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
+									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
+									<li><strong>Safe:</strong> 2.6” x 0.94”</li>
+								</ul>
+							</div>
+							<div class="row text-center">
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>psd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Photoshop</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>ai</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Illustrator</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>indd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>InDesign</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>jpg</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Jpeg</small>
+									</div>
+								</div>
+							</div>
+							<div class="guide-line-img-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
+									alt="Design Guideline" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Flyer Printing Tab -->
+				<div class="tab-pane fade" id="flyer" role="tabpanel" aria-labelledby="flyer-tab">
+					<div class="text-center mb-4">
+						<h6 class="font-weight-bold text-main"><i class="bi bi-arrow-right-square h6">
+							</i> Our services</h6>
+						<h3 class="font-weight-bold">Flyer Printing</h3>
+						<p>
+							Choose the perfect design. We start at premium and go all the way to extra fancy.
+							Options include original single-sided flyers (writeable on one side) without an envelope,
+							original double-sided flyers (more impactful) and luxe flyers (extra thick and luxurious).
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-md-6 mb-4">
+							<div class="video-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
+									alt="Video">
+								<div class="video-overlay">
+									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
+									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
+										class="btn bg-main rounded-circle mt-3 btn-ripple">
+										<i class="bi bi-play-fill text-white h1"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="mb-3">
+								<h3>Download a Design Guideline</h3>
+								<ul class="list-unstyled">
+									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
+									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
+									<li><strong>Safe:</strong> 2.6” x 0.94”</li>
+								</ul>
+							</div>
+							<div class="row text-center">
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>psd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Photoshop</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>ai</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Illustrator</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>indd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>InDesign</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>jpg</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Jpeg</small>
+									</div>
+								</div>
+							</div>
+							<div class="guide-line-img-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
+									alt="Design Guideline" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Poster Printing Tab -->
+				<div class="tab-pane fade" id="poster" role="tabpanel" aria-labelledby="poster-tab">
+					<div class="text-center mb-4">
+						<h6 class="text-main font-weight-bold"><i class="bi bi-arrow-right-square h6">
+							</i> Our services</h6>
+						<h3 class="font-weight-bold">Poster Printing</h3>
+						<p>
+							Choose the perfect design. We start at premium and go all the way to extra fancy.
+							Options include original single-sided Posters (writeable on one side) without an envelope,
+							original double-sided Posters (more impactful) and luxe posters (extra thick and luxurious).
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-md-6 mb-4">
+							<div class="video-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
+									alt="Video">
+								<div class="video-overlay">
+									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
+									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
+										class="btn bg-main rounded-circle mt-3 btn-ripple">
+										<i class="bi bi-play-fill text-white h1"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="mb-3">
+								<h3>Download a Design Guideline</h3>
+								<ul class="list-unstyled">
+									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
+									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
+									<li><strong>Safe:</strong> 2.6” x 0.94”</li>
+								</ul>
+							</div>
+							<div class="row text-center">
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>psd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Photoshop</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>ai</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Illustrator</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>indd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>InDesign</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>jpg</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Jpeg</small>
+									</div>
+								</div>
+							</div>
+							<div class="guide-line-img-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
+									alt="Design Guideline" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Sticker Printing Tab -->
+				<div class="tab-pane fade" id="sticker" role="tabpanel" aria-labelledby="sticker-tab">
+					<div class="text-center mb-4">
+						<h6 class="text-main font-weight-bold"><i class="bi bi-arrow-right-square h6">
+							</i> Our services</h>
+							<h3 class="font-weight-bold">Sticker Printing</h3>
+							<p>
+								Choose the perfect design. We start at premium and go all the way to extra fancy.
+								Options include original single-sided stickers (writeable on one side) without an
+								envelope,
+								original double-sided stickers (more impactful) and luxe stickers (extra thick and
+								luxurious).
+							</p>
+					</div>
+					<div class="row">
+						<div class="col-md-6 mb-4">
+							<div class="video-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
+									alt="Video">
+								<div class="video-overlay">
+									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
+									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
+										class="btn bg-main rounded-circle mt-3 btn-ripple">
+										<i class="bi bi-play-fill text-white h1"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="mb-3">
+								<h3>Download a Design Guideline</h3>
+								<ul class="list-unstyled">
+									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
+									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
+									<li><strong>Safe:</strong> 2.6” x 0.94”</li>
+								</ul>
+							</div>
+							<div class="row text-center">
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>psd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Photoshop</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>ai</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Illustrator</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>indd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>InDesign</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>jpg</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Jpeg</small>
+									</div>
+								</div>
+							</div>
+							<div class="guide-line-img-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
+									alt="Design Guideline" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Postcard Printing Tab -->
+				<div class="tab-pane fade" id="postcard" role="tabpanel" aria-labelledby="postcard-tab">
+					<div class="text-center mb-4">
+						<h6 class="text-main font-weight-bold">Our services</h6>
+						<h3 class="font-weight-bold">Postcard Printing</h3>
+						<p>
+							Choose the perfect design. We start at premium and go all the way to extra fancy.
+							Options include original single-sided postcards (writeable on one side) without an envelope,
+							original double-sided postcards (more impactful) and luxe postcards (extra thick and
+							luxurious).
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-md-6 mb-4">
+							<div class="video-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
+									alt="Video">
+								<div class="video-overlay">
+									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
+									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
+										class="btn bg-main rounded-circle mt-3 btn-ripple">
+										<i class="bi bi-play-fill text-white h1"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="mb-3">
+								<h3>Download a Design Guideline</h3>
+								<ul class="list-unstyled">
+									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
+									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
+									<li><strong>Safe:</strong> 2.6” x 0.94”</li>
+								</ul>
+							</div>
+							<div class="row text-center">
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>psd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Photoshop</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>ai</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Illustrator</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>indd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>InDesign</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>jpg</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Jpeg</small>
+									</div>
+								</div>
+							</div>
+							<div class="guide-line-img-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
+									alt="Design Guideline" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Book Printing Tab -->
+				<div class="tab-pane fade show" id="books" role="tabpanel" aria-labelledby="books-tab">
+					<div class="text-center mb-4">
+						<h6 class="font-weight-bold text-main"><i class="bi bi-arrow-right-square h6">
+							</i> Our services</h6>
+						<h3 class="font-weight-bold">Book Printing</h3>
+						<p>
+							Choose the perfect design. We start at premium and go all the way to extra fancy.
+							Options include original single-sided Book (writeable on one side) without an envelope,
+							original double-sided Books (more impactful) and luxury Books (extra thick and
+							luxurious).
+						</p>
+					</div>
+					<div class="row">
+						<!-- Video Box -->
+						<div class="col-md-6 mb-4">
+							<div class="video-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
+									alt="Video">
+								<div class="video-overlay">
+									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
+									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
+										class="btn bg-main rounded-circle mt-3 btn-ripple">
+										<i class="bi bi-play-fill text-white h1"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Design Guideline -->
+						<div class="col-md-6">
+							<div class="mb-3">
+								<h3>Download a Design Guideline</h3>
+								<ul class="list-unstyled">
+									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
+									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
+									<li><strong>Safe:</strong> 2.6” x 0.94”</li>
+								</ul>
+							</div>
+							<div class="row text-center">
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>psd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Photoshop</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>ai</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Illustrator</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>indd</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>InDesign</small>
+									</div>
+								</div>
+								<div class="col-6 col-sm-3 mb-3">
+									<div class="border p-2">
+										<span>jpg</span>
+										<i class="bi bi-chevron-double-down d-block"></i>
+										<small>Jpeg</small>
+									</div>
+								</div>
+							</div>
+							<div class="guide-line-img-box">
+								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
+									alt="Design Guideline" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.tab-content -->
+		</div>
+	</section>
+
+
+
 
 	<div class="fixed point w0">
 		<a href="https://api.whatsapp.com/send?phone=91">
