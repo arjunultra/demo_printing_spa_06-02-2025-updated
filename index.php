@@ -36,7 +36,8 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body id="index" data-spy="scroll" data-target=".navbar" data-offset="50" itemscope
+	itemtype="http://schema.org/WebPage">
 	<!-- header -->
 	<header>
 		<!-- Topbar / Marquee -->
@@ -65,37 +66,22 @@
 					aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="bi bi-list nav-icon text-white"></span>
 				</button>
-				<!-- <a class="navbar-toggler mx-auto" data-toggle="collapse" data-target="#myNavbar">
-				<span class="bi bi-list text-white"></span>
-			</a> -->
-
-
 				<div id="myNavbar" class="collapse navbar-collapse">
 					<ul class="navbar-nav ml-auto text-center">
-						<li class="nav-item px-2 <?php if ($page == "home") {
-							echo "active";
-						} ?>">
-							<a class="nav-link" href="index.php">Home</a>
+						<li class="nav-item px-2 active" id="nav-home">
+							<a class="nav-link" href="#index" onclick="scrollToSection('index')">Home</a>
 						</li>
-						<li class="nav-item px-2 <?php if ($page == "about") {
-							echo "active";
-						} ?>">
-							<a class="nav-link" href="about.php">About</a>
+						<li class="nav-item px-2" id="nav-about">
+							<a class="nav-link" href="#about" onclick="scrollToSection('about')">About</a>
 						</li>
-						<li class="nav-item px-2 <?php if ($page == "services") {
-							echo "active";
-						} ?>">
-							<a class="nav-link" href="products.php">Services</a>
+						<li class="nav-item px-2" id="nav-services">
+							<a class="nav-link" href="#services" onclick="scrollToSection('services')">Services</a>
 						</li>
-						<li class="nav-item px-2 <?php if ($page == "gallery") {
-							echo "active";
-						} ?>">
-							<a class="nav-link" href="safety.php">Gallery</a>
+						<li class="nav-item px-2" id="nav-gallery">
+							<a class="nav-link" href="#gallery" onclick="scrollToSection('gallery')">Gallery</a>
 						</li>
-						<li class="nav-item px-3 <?php if ($page == "contact") {
-							echo "active";
-						} ?>">
-							<a class="nav-link" href="contact.php">Contact</a>
+						<li class="nav-item px-3" id="nav-contact">
+							<a class="nav-link" href="#contact" onclick="scrollToSection('contact', -160)">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -131,15 +117,135 @@
 			</div>
 		</div>
 	</div>
+	<!-- about -->
+	<section class="about-section pad" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-6">
+					<div class="image-column">
+						<div class="image-box">
+							<div class="image-shape">
+								<div class="shape shape-1"></div>
+								<div class="shape shape-2"></div>
+								<div class="shape shape-3"></div>
+							</div>
+							<figure class="image image-1"><img decoding="async" src="./images/about-1.jpg"
+									alt="about image" title="Demo Printz"></figure>
+							<figure class="image image-2"><img decoding="async" src="./images/about-2.jpg"
+									alt="Awesome Image" title="Demo Printz"></figure>
+							<figure class="image image-3"><img decoding="async" src="./images/about-3.jpg"
+									alt="Awesome Image" title="Demo Printz"></figure>
+							<figure class="image image-4"><img title="Demo Printz" decoding="async"
+									src="./images/about-1.png" alt="Awesome Image"></figure>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-6">
+					<div class="sec-title">
+						<h6 class="subtitle">Who We Are</h6>
+						<h2 class="title font-weight-bold">Leading Printing Company in Sivakasi</h2>
+						<p class="text-muted lead py-3">At Demo Printz, we take pride in delivering high-quality,
+							customized
+							printing
+							solutions. Our expertise, innovative technology, and commitment to excellence ensure that
+							every project meets your needs, elevating your brand with precision and reliability.</p>
+						<a href="#" class="theme-btn text-uppercase ">more about us</a>
+					</div>
+					<ul class="te-icon-box highlights-list clearfix">
+						<li class="te-icon">
+							<i class="bi bi-bullseye"></i><a class="te-title" href="#"><span class="te-title">
+									Mission: Quality, Innovation, Integrity.</span></a>
+						</li>
+						<li class="te-icon">
+							<i class="bi bi-eye-fill"></i><a class="te-title" href="#"><span class="te-title">
+									Vision: Quality Printing Solutions.</span></a>
+						</li>
+						<li class="te-icon">
+							<i class="bi bi-gem"></i><a class="te-title" href="#"><span class="te-title">
+									Values: Cost Effecient</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="index-two pad">
+		<div class="container pad">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-6">
+					<!-- lhs -->
+					<div class="content-box cta-section">
+						<span class="big-text d-none d-md-block">numbers</span>
+						<div class="light">
+							<h6 class="subtitle">Interesting Numbers</h6>
+							<h2 class="title heading4">Proud of our Past, Printing for the Future</h2>
+						</div>
+						<div class="text-box">
+							<p class="text">Innovative printing solutions preserving heritage, crafting tomorrow's
+								excellence.</p>
+							<a class="theme-btn btn-one" href="#">Start Your Project</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<!-- rhs -->
+					<div class="three-box-container align-items-center justify-content-center">
+						<div class="d-flex flex-column flex-one two-cards">
+							<div class="card-one mb-md-5">
+								<div class="count-text">
+									<span class="counter count" data-count="8">0</span>
+									<span class="symbol">+</span>
+								</div>
+								<p class="card-text">Years Experinced in the field of Printing Service.</p>
+								<div class="bottom-iconbox text-main">
+									<i class="bi bi-images"></i>
+								</div>
+							</div>
+							<div class="card-one">
+								<div class="count-text">
+									<span class="counter count text-success" data-count="5.6">0</span>
+									<span class="symbol text-success">m</span>
+								</div>
+								<p class="card-text">Items Printed by Professional Team Members.</p>
+								<div class="bottom-iconbox text-success">
+									<i class="bi bi-cup-fill"></i>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-3 align-self-center">
+					<div class="three-box-container justify-content-center">
+						<div class="d-flex flex-column flex-one two-cards">
+							<div class="card-one mb-md-5">
+								<div class="count-text">
+									<span class="counter count text-primary" data-count="2600">0</span>
+									<span class="symbol"></span>
+								</div>
+								<p class="card-text">Active User on Product We Created.</p>
+								<div class="bottom-iconbox text-primary">
+									<i class="bi bi-person-badge-fill"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- index-card  -->
-	<section class="index-one pad">
+	<section class="index-one pad" id="services">
 		<div class="container text-center">
 			<h2 class="small-heading h6 text-uppercase text-main font-weight-bold text-center">services</h2>
-			<h3 class="heading text-capitalize text-center font-weight-bold h1 text-dark">Quality Printing & <br>
+			<h3 class="heading text-capitalize text-center font-weight-bold h1 text-dark my-text">Quality Printing &
+				<br>
 				Tailored
 				Printing
 				Solutions for
-				Every Need</h3>
+				Every Need
+			</h3>
 			<p class="text-center mt-4">We are one of the leading wholesale offset printers and dealer in printing
 				allied
 				products.
@@ -203,124 +309,6 @@
 						<p class="card-text">Reliable, high-quality printing services for customized, efficient,
 							versatile solutions
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="index-two pad">
-		<div class="container pad">
-			<div class="row">
-				<div class="col-12 col-md-6 col-lg-6">
-					<!-- lhs -->
-					<div class="content-box cta-section">
-						<span class="big-text d-none d-md-block">numbers</span>
-						<div class="light">
-							<h6 class="subtitle">Interesting Numbers</h6>
-							<h2 class="title heading4">Proud of our Past, Printing for the Future</h2>
-						</div>
-						<div class="text-box">
-							<p class="text">Innovative printing solutions preserving heritage, crafting tomorrow's
-								excellence.</p>
-							<a class="theme-btn btn-one" href="#">Start Your Project</a>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-12 col-md-6 col-lg-3">
-					<!-- rhs -->
-					<div class="three-box-container align-items-center justify-content-center">
-						<div class="d-flex flex-column flex-one two-cards">
-							<div class="card-one mb-md-5">
-								<div class="count-text">
-									<span class="counter">8</span>
-									<span class="symbol">+</span>
-								</div>
-								<p class="card-text">Years Experinced in the field of Printing Service.</p>
-								<div class="bottom-iconbox text-main">
-									<i class="bi bi-images"></i>
-								</div>
-							</div>
-							<div class="card-one">
-								<div class="count-text">
-									<span class="counter text-success">5.6</span>
-									<span class="symbol text-success">m</span>
-								</div>
-								<p class="card-text">Items Printed by Professional Team Members.</p>
-								<div class="bottom-iconbox text-success">
-									<i class="bi bi-cup-fill"></i>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<div class="col-lg-3 align-self-center">
-					<div class="three-box-container justify-content-center">
-						<div class="d-flex flex-column flex-one two-cards">
-							<div class="card-one mb-md-5">
-								<div class="count-text">
-									<span class="counter text-primary">2600</span>
-									<span class="symbol"></span>
-								</div>
-								<p class="card-text">Active User on Product We Created.</p>
-								<div class="bottom-iconbox text-primary">
-									<i class="bi bi-person-badge-fill"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- about -->
-	<section class="about-section pad">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-6 col-lg-6">
-					<div class="image-column">
-						<div class="image-box">
-							<div class="image-shape">
-								<div class="shape shape-1"></div>
-								<div class="shape shape-2"></div>
-								<div class="shape shape-3"></div>
-							</div>
-							<figure class="image image-1"><img decoding="async" src="./images/about-1.jpg"
-									alt="Awesome Image"></figure>
-							<figure class="image image-2"><img decoding="async" src="./images/about-2.jpg"
-									alt="Awesome Image"></figure>
-							<figure class="image image-3"><img decoding="async" src="./images/about-3.jpg"
-									alt="Awesome Image"></figure>
-							<figure class="image image-4"><img decoding="async" src="./images/about-1.png"
-									alt="Awesome Image"></figure>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-6">
-					<div class="sec-title">
-						<h6 class="subtitle">Who We Are</h6>
-						<h2 class="title font-weight-bold">Leading Printing Company in Sivakasi</h2>
-						<p class="text-muted lead py-3">At Demo Printz, we take pride in delivering high-quality,
-							customized
-							printing
-							solutions. Our expertise, innovative technology, and commitment to excellence ensure that
-							every project meets your needs, elevating your brand with precision and reliability.</p>
-						<a href="#" class="theme-btn text-uppercase ">more about us</a>
-					</div>
-					<ul class="te-icon-box highlights-list clearfix">
-						<li class="te-icon">
-							<i class="bi bi-bullseye"></i><a class="te-title" href="#"><span class="te-title">
-									Mission: Quality, Innovation, Integrity.</span></a>
-						</li>
-						<li class="te-icon">
-							<i class="bi bi-eye-fill"></i><a class="te-title" href="#"><span class="te-title">
-									Vision: Quality Printing Solutions.</span></a>
-						</li>
-						<li class="te-icon">
-							<i class="bi bi-gem"></i><a class="te-title" href="#"><span class="te-title">
-									Values: Cost Effecient</span></a>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -434,296 +422,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- projects section as gallery -->
-	<section class="project-section pad">
-		<div class="container">
-			<div class="row align-items-center mb-5">
-				<div class="col-md-6">
-					<div class="sec-title">
-						<h6 class="subtitle text-main text-uppercase font-weight-bold">
-							<span class="text-main">
-								<i class="bi bi-arrow-right-square h5"></i>
-							</span>
-							Projects
-						</h6>
-						<h2 class="te-title printpark-size-default h1 font-weight-bold">
-							Explore our Recent Projects
-						</h2>
-					</div>
-				</div>
-				<div class="col-md-6 text-md-right">
-					<a class="theme-btn d-inline-block" href="#">More Projects</a>
-				</div>
-			</div>
-
-			<div class="row">
-				<!-- Project 1 -->
-				<div class="col-lg-4 col-md-6 col-12 mb-4">
-					<div class="project-block-one">
-						<div class="inner-box bn-project-box">
-							<figure class="image-box">
-								<img loading="lazy" decoding="async" width="370" height="570"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-1.jpg"
-									class="img-fluid" alt="">
-							</figure>
-							<div class="content-box">
-								<h6 class="ser-category">Digital Printing</h6>
-								<div class="view-btn bn-project-icon">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-1.jpg"
-										class="lightbox-image" data-fancybox="gallery">
-										<i class="bi bi-arrows-angle-expand"></i>
-									</a>
-								</div>
-								<div class="link-btn">
-									<a
-										href="https://wp1.themevibrant.com/newwp/printpark/project/kraft-food-container/">
-										<i class="bi bi-arrow-right"></i>
-									</a>
-								</div>
-								<h3>
-									<a class="ser-title"
-										href="https://wp1.themevibrant.com/newwp/printpark/project/kraft-food-container/">
-										Kraft Food Container
-									</a>
-								</h3>
-							</div>
-						</div>
-					</div>
-					<!-- 1 col second div -->
-					<div class="project-block-one">
-						<div class="inner-box bn-project-box">
-							<figure class="image-box">
-								<img loading="lazy" decoding="async" width="370" height="270"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-4.jpg"
-									class="img-fluid" alt="">
-							</figure>
-							<div class="content-box">
-								<h6 class="ser-category">Digital Printing</h6>
-								<div class="view-btn bn-project-icon">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-4.jpg"
-										class="lightbox-image" data-fancybox="gallery">
-										<i class="bi bi-arrows-angle-expand"></i>
-									</a>
-								</div>
-								<div class="link-btn">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/project/mailing-services/">
-										<i class="bi bi-arrow-right"></i>
-									</a>
-								</div>
-								<h3>
-									<a class="ser-title"
-										href="https://wp1.themevibrant.com/newwp/printpark/project/mailing-services/">
-										Mailing Services
-									</a>
-								</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- 2nd column starts -->
-				<!-- Project 2 -->
-				<div class="col-lg-4 col-md-6 col-12 mb-4">
-					<div class="project-block-one">
-						<div class="inner-box bn-project-box">
-							<figure class="image-box">
-								<img loading="lazy" decoding="async" width="370" height="270"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-2.jpg"
-									class="img-fluid" alt="">
-							</figure>
-							<div class="content-box">
-								<h6 class="ser-category">Digital Printing</h6>
-								<div class="view-btn bn-project-icon">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-2.jpg"
-										class="lightbox-image" data-fancybox="gallery">
-										<i class="bi bi-arrows-angle-expand"></i>
-									</a>
-								</div>
-								<div class="link-btn">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/project/printing-services/">
-										<i class="bi bi-arrow-right"></i>
-									</a>
-								</div>
-								<h3>
-									<a class="ser-title"
-										href="https://wp1.themevibrant.com/newwp/printpark/project/printing-services/">
-										Printing Services
-									</a>
-								</h3>
-							</div>
-						</div>
-					</div>
-					<!-- second column -->
-					<div class="project-block-one">
-						<div class="inner-box bn-project-box">
-							<figure class="image-box">
-								<img loading="lazy" decoding="async" width="370" height="570"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-5.jpg"
-									class="img-fluid" alt="">
-							</figure>
-							<div class="content-box">
-								<h6 class="ser-category">Digital Printing</h6>
-								<div class="view-btn bn-project-icon">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-5.jpg"
-										class="lightbox-image" data-fancybox="gallery">
-										<i class="bi bi-arrows-angle-expand"></i>
-									</a>
-								</div>
-								<div class="link-btn">
-									<a
-										href="https://wp1.themevibrant.com/newwp/printpark/project/promotional-products/">
-										<i class="bi bi-arrow-right"></i>
-									</a>
-								</div>
-								<h3>
-									<a class="ser-title"
-										href="https://wp1.themevibrant.com/newwp/printpark/project/promotional-products/">
-										Promotional Products
-									</a>
-								</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Project 3 -->
-				<div class="col-lg-4 col-md-6 col-12 mb-4">
-					<div class="project-block-one">
-						<div class="inner-box bn-project-box">
-							<figure class="image-box">
-								<img loading="lazy" decoding="async" width="370" height="570"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-3.jpg"
-									class="img-fluid" alt="">
-							</figure>
-							<div class="content-box">
-								<h6 class="ser-category">Digital Printing</h6>
-								<div class="view-btn bn-project-icon">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-3.jpg"
-										class="lightbox-image" data-fancybox="gallery">
-										<i class="bi bi-arrows-angle-expand"></i>
-									</a>
-								</div>
-								<div class="link-btn">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/project/design-services/">
-										<i class="bi bi-arrow-right"></i>
-									</a>
-								</div>
-								<h3>
-									<a class="ser-title"
-										href="https://wp1.themevibrant.com/newwp/printpark/project/design-services/">
-										Design Services
-									</a>
-								</h3>
-							</div>
-						</div>
-					</div>
-					<div class="project-block-one">
-						<div class="inner-box bn-project-box">
-							<figure class="image-box">
-								<img loading="lazy" decoding="async" width="370" height="270"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-6.jpg"
-									class="img-fluid" alt="">
-							</figure>
-							<div class="content-box">
-								<h6 class="ser-category">Digital Printing</h6>
-								<div class="view-btn bn-project-icon">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-6.jpg"
-										class="lightbox-image" data-fancybox="gallery">
-										<i class="bi bi-arrows-angle-expand"></i>
-									</a>
-								</div>
-								<div class="link-btn">
-									<a href="https://wp1.themevibrant.com/newwp/printpark/project/digital-signage/">
-										<i class="bi bi-arrow-right"></i>
-									</a>
-								</div>
-								<h3>
-									<a class="ser-title"
-										href="https://wp1.themevibrant.com/newwp/printpark/project/digital-signage/">
-										Digital Signage
-									</a>
-								</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</section>
-	<!-- why us -- about -->
-	<section class="why-section pad">
-		<div class="container">
-			<div class="row text-center mb-4">
-				<div class="col-12">
-					<div class="sec-title">
-						<h6 class="heading6 text-main arial font-weight-bold"><i class="bi bi-arrow-right-square h6">
-							</i> Why Demo
-							Printz</h6>
-						<h2 class="font-weight-bold heading1">Deliver More than you Expect</h2>
-						<p class="text-muted">Unmatched quality, timely delivery, eco-friendly practices, and
-							exceptional customer service.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row align-items-center">
-				<!-- Left Column (Features) -->
-				<div class="col-12 col-md-4 col-lg-4 text-center">
-					<div class="single-item te-icon-box mb-4">
-						<div class="icon-box"><i class="bi bi-stars text-main h3"></i></div>
-						<h3 class="te-title font-weight-bold">Professionalism</h3>
-						<p class="te-text text-secondary">Obligations of business frequently occur that accepted all.
-						</p>
-					</div>
-					<div class="single-item te-icon-box mb-4">
-						<div class="icon-box te-icon"><i class="h3 text-green bi bi-stars"></i></div>
-						<h3 class="te-title font-weight-bold">Expertise</h3>
-						<p class="te-text text-secondary">The wise man therefore always holds these matters to this
-							principle.</p>
-					</div>
-					<div class="single-item te-icon-box mb-4">
-						<div class="icon-box te-icon"><i class="bi bi-stars text-info h3"></i></div>
-						<h3 class="te-title font-weight-bold">Competitive Prices</h3>
-						<p class="te-text text-secondary">Charms of pleasure of the moment, that are bound to ensue.</p>
-					</div>
-				</div>
-
-				<!-- Middle Column (Image) -->
-				<div class="col-12 col-md-4 col-lg-4 text-center">
-					<div class="image-box position-relative">
-						<div class="image-shape"
-							style="background-image: url('https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-7.png');">
-						</div>
-						<figure class="image">
-							<img decoding="async" class="img-fluid rounded-circle" src="./images/pdtimg-3.png"
-								alt="Awesome Image">
-						</figure>
-					</div>
-				</div>
-
-				<!-- Right Column (Features) -->
-				<div class="col-12 col-md-4 col-lg-4 text-center">
-					<div class="single-item te-icon-box mb-4">
-						<div class="icon-box te-icon"><i class="bi bi-stars h3 text-main"></i></div>
-						<h3 class="te-title font-weight-bold">Quality Service</h3>
-						<p class="te-text text-secondary">Charms of pleasure of the moment, that are bound to ensue.</p>
-					</div>
-					<div class="single-item te-icon-box mb-4">
-						<div class="icon-box te-icon"><i class="bi bi-stars text-green h3"></i></div>
-						<h3 class="te-title font-weight-bold">Cost Effective</h3>
-						<p class="te-text text-secondary">Obligations of business frequently occur that accepted all.
-						</p>
-					</div>
-					<div class="single-item te-icon-box mb-4">
-						<div class="icon-box te-icon"><i class="bi bi-stars h3 text-info"></i></div>
-						<h3 class="te-title font-weight-bold">Customization</h3>
-						<p class="te-text text-secondary">The wise man therefore always holds these matters to this
-							principle.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<!-- tab section -->
 	<section class="tab-section pad">
 		<div class="container">
@@ -792,8 +490,7 @@
 						<!-- Video Box -->
 						<div class="col-md-6 mb-4">
 							<div class="video-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
-									alt="Video">
+								<img src="./images/video-box-1-1.jpg" alt="T-shirt printing" title="Demo Printz">
 								<div class="video-overlay">
 									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
 									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
@@ -844,8 +541,8 @@
 								</div>
 							</div>
 							<div class="guide-line-img-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
-									alt="Design Guideline" class="img-fluid">
+								<img src="./images/download-guide-line-1-1.jpg" alt="Design Guideline" class="img-fluid"
+									title="Demo Printz">
 							</div>
 						</div>
 					</div>
@@ -866,8 +563,7 @@
 					<div class="row">
 						<div class="col-md-6 mb-4">
 							<div class="video-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
-									alt="Video">
+								<img src="./images/video-box-1-1.jpg" alt="Video" title="Demo Printz">
 								<div class="video-overlay">
 									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
 									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
@@ -917,8 +613,8 @@
 								</div>
 							</div>
 							<div class="guide-line-img-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
-									alt="Design Guideline" class="img-fluid">
+								<img src="./images/download-guide-line-1-1.jpg" alt="Design Guideline" class="img-fluid"
+									title="Demo Printz">
 							</div>
 						</div>
 					</div>
@@ -939,8 +635,7 @@
 					<div class="row">
 						<div class="col-md-6 mb-4">
 							<div class="video-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
-									alt="Video">
+								<img src="./images/video-box-1-1.jpg" alt="Video" title="Demo Printz">
 								<div class="video-overlay">
 									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
 									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
@@ -990,8 +685,8 @@
 								</div>
 							</div>
 							<div class="guide-line-img-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
-									alt="Design Guideline" class="img-fluid">
+								<img src="./images/download-guide-line-1-1.jpg" alt="Design Guideline" class="img-fluid"
+									title="Demo Printz">
 							</div>
 						</div>
 					</div>
@@ -1014,8 +709,7 @@
 					<div class="row">
 						<div class="col-md-6 mb-4">
 							<div class="video-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
-									alt="Video">
+								<img src="./images/video-box-1-1.jpg" alt="Video" title="Demo Printz">
 								<div class="video-overlay">
 									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
 									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
@@ -1065,8 +759,8 @@
 								</div>
 							</div>
 							<div class="guide-line-img-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
-									alt="Design Guideline" class="img-fluid">
+								<img src="./images/download-guide-line-1-1.jpg" alt="Design Guideline" class="img-fluid"
+									title="Demo Printz">
 							</div>
 						</div>
 					</div>
@@ -1087,8 +781,7 @@
 					<div class="row">
 						<div class="col-md-6 mb-4">
 							<div class="video-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
-									alt="Video">
+								<img src="./images/video-box-1-1.jpg" alt="Video" title="Demo Printz">
 								<div class="video-overlay">
 									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
 									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
@@ -1138,8 +831,8 @@
 								</div>
 							</div>
 							<div class="guide-line-img-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
-									alt="Design Guideline" class="img-fluid">
+								<img src="./images/download-guide-line-1-1.jpg" alt="Design Guideline" class="img-fluid"
+									title="Demo Printz">
 							</div>
 						</div>
 					</div>
@@ -1161,8 +854,7 @@
 						<!-- Video Box -->
 						<div class="col-md-6 mb-4">
 							<div class="video-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/video-box-1-1.jpg"
-									alt="Video">
+								<img src="./images/video-box-1-1.jpg" alt="Video" title="Demo Printz">
 								<div class="video-overlay">
 									<h3 class="text-white text-center">Demo Printz Makes <br> Every Print Unique</h3>
 									<a href="https://www.youtube.com/watch?v=8l-UlsKqkhQ&amp;feature=emb_logo"
@@ -1213,8 +905,8 @@
 								</div>
 							</div>
 							<div class="guide-line-img-box">
-								<img src="https://z.commonsupport.com/printify/wp-content/uploads/2020/02/download-guide-line-1-1.jpg"
-									alt="Design Guideline" class="img-fluid">
+								<img src="./images/download-guide-line-1-1.jpg" alt="Design Guideline" class="img-fluid"
+									title="Demo Printz">
 							</div>
 						</div>
 					</div>
@@ -1222,7 +914,451 @@
 			</div><!-- /.tab-content -->
 		</div>
 	</section>
+	<!-- brands -->
+	<section class="brands-section  bg-main py-5 wow fadeIn" data-wow-duration="1s">
+		<div class="container">
+			<h2 class="section-title text-center mb-5 text-main font-weight-bold h1 my-text">Brands We Handle</h2>
+			<!-- Owl Carousel Container -->
+			<div class="custom1 owl-carousel">
+				<!-- Brand 1 -->
+				<div class="item border px-3">
+					<div class="brand-card hvr-grow">
+						<div class="brand-logo">
+							<img src="images/1.webp" alt=" brandlogo" class="img-fluid">
+						</div>
+						<!-- <h3 class="brand-name">PyroExplode</h3> -->
+					</div>
+				</div>
 
+				<!-- Brand 2 -->
+				<div class="item border px-3">
+					<div class="brand-card hvr-grow">
+						<div class="brand-logo">
+							<img src="images/2.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
+						</div>
+						<!-- <h3 class="brand-name">SkyBlasters</h3> -->
+					</div>
+				</div>
+
+				<!-- Brand 3 -->
+				<div class="item border px-3">
+					<div class="brand-card hvr-grow">
+						<div class="brand-logo">
+							<img src="images/3.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
+						</div>
+						<!-- <h3 class="brand-name">NightFury</h3> -->
+					</div>
+				</div>
+
+				<!-- Brand 4 -->
+				<div class="item border px-3">
+					<div class="brand-card hvr-grow">
+						<div class="brand-logo">
+							<img src="images/4.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
+						</div>
+						<!-- <h3 class="brand-name">RocketRage</h3> -->
+					</div>
+				</div>
+
+				<!-- Brand 5 -->
+				<div class="item border px-3">
+					<div class="brand-card hvr-grow">
+						<div class="brand-logo">
+							<img src="images/5.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
+						</div>
+						<!-- <h3 class="brand-name">BlastWave</h3> -->
+					</div>
+				</div>
+
+				<!-- Brand 6 -->
+				<div class="item border px-3">
+					<div class="brand-card hvr-grow">
+						<div class="brand-logo">
+							<img src="images/6.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
+						</div>
+						<!-- <h3 class="brand-name">FireStrike</h3> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- projects section as gallery -->
+	<section class="project-section pad" id="gallery">
+		<div class="container">
+			<div class="row align-items-center mb-5">
+				<div class="col-md-6">
+					<div class="sec-title">
+						<h6 class="subtitle text-main text-uppercase font-weight-bold">
+							<span class="text-main">
+								<i class="bi bi-arrow-right-square h5"></i>
+							</span>
+							Projects
+						</h6>
+						<h2 class="te-title printpark-size-default h1 font-weight-bold">
+							Explore our Recent Projects
+						</h2>
+					</div>
+				</div>
+				<div class="col-md-6 text-md-right">
+					<a class="theme-btn d-inline-block" href="#">More Projects</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Project 1 -->
+				<div class="col-lg-4 col-md-6 col-12 mb-4">
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="570"
+									src="./images/project-1.jpg" class="img-fluid" alt="project one"
+									title="Demo Printz">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-1.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="#">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title" href="#">
+										Kraft Food Container
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<!-- 1 col second div -->
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="270"
+									src="./images/project-4.jpg" class="img-fluid" alt="project four"
+									title="Demo Printz">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-4.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="#">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title" href="#">
+										Mailing Services
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 2nd column starts -->
+				<!-- Project 2 -->
+				<div class="col-lg-4 col-md-6 col-12 mb-4">
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="270" src="images/project-2.jpg"
+									class="img-fluid" alt="project two" title="project two">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-2.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="#">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title" href="#">
+										Printing Services
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<!-- second column -->
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="570"
+									src="./images/project-5.jpg" class="img-fluid" alt="project five"
+									title="Demo Printz">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-5.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="#">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title" href="#">
+										Promotional Products
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div class="col-lg-4 col-md-6 col-12 mb-4">
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="570"
+									src="./images/project-3.jpg" class="img-fluid" alt="project three"
+									title="Demo Printz">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-3.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="#">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title" href="#">
+										Design Services
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="project-block-one">
+						<div class="inner-box bn-project-box">
+							<figure class="image-box">
+								<img loading="lazy" decoding="async" width="370" height="270"
+									src="./images/project-6.jpg" class="img-fluid" alt="">
+							</figure>
+							<div class="content-box">
+								<h6 class="ser-category">Digital Printing</h6>
+								<div class="view-btn bn-project-icon">
+									<a href="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/project-6.jpg"
+										class="lightbox-image" data-fancybox="gallery">
+										<i class="bi bi-arrows-angle-expand"></i>
+									</a>
+								</div>
+								<div class="link-btn">
+									<a href="#">
+										<i class="bi bi-arrow-right"></i>
+									</a>
+								</div>
+								<h3>
+									<a class="ser-title" href="#">
+										Digital Signage
+									</a>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section>
+	<!-- contact banner -->
+	<section class="contact-section">
+		<div class="container-fluid p-0">
+			<div class="row no-gutters">
+				<div class="col-12">
+					<!-- Container with background image -->
+					<div class="image-container d-flex flex-column justify-content-center align-items-center">
+						<h3 class="text-uppercase font-weight-bold text-white text-center mb-5">
+							We are your one stop shop for all your printing needs
+						</h3>
+						<a class="theme-btn" href="#">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- why us -- about -->
+	<section class="why-section pad">
+		<div class="container">
+			<div class="row text-center mb-4">
+				<div class="col-12">
+					<div class="sec-title">
+						<h6 class="heading6 text-main arial font-weight-bold"><i class="bi bi-arrow-right-square h6">
+							</i> Why Demo
+							Printz</h6>
+						<h2 class="font-weight-bold heading1">Deliver More than you Expect</h2>
+						<p class="text-muted">Unmatched quality, timely delivery, eco-friendly practices, and
+							exceptional customer service.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<!-- Left Column (Features) -->
+				<div class="col-12 col-md-4 col-lg-4 text-center">
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box"><i class="bi bi-stars text-main h3"></i></div>
+						<h3 class="te-title font-weight-bold">Professionalism</h3>
+						<p class="te-text text-secondary">Obligations of business frequently occur that accepted all.
+						</p>
+					</div>
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="h3 text-green bi bi-stars"></i></div>
+						<h3 class="te-title font-weight-bold">Expertise</h3>
+						<p class="te-text text-secondary">The wise man therefore always holds these matters to this
+							principle.</p>
+					</div>
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="bi bi-stars text-info h3"></i></div>
+						<h3 class="te-title font-weight-bold">Competitive Prices</h3>
+						<p class="te-text text-secondary">Charms of pleasure of the moment, that are bound to ensue.</p>
+					</div>
+				</div>
+
+				<!-- Middle Column (Image) -->
+				<div class="col-12 col-md-4 col-lg-4 text-center">
+					<div class="image-box position-relative">
+						<div class="image-shape-middle">
+							<figure class="image">
+								<img decoding="async" class="img-fluid rounded-circle" src="./images/pdtimg-3.png"
+									alt="Awesome Image" title="Demo Printz">
+							</figure>
+						</div>
+					</div>
+				</div>
+
+				<!-- Right Column (Features) -->
+				<div class="col-12 col-md-4 col-lg-4 text-center">
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="bi bi-stars h3 text-main"></i></div>
+						<h3 class="te-title font-weight-bold">Quality Service</h3>
+						<p class="te-text text-secondary">Charms of pleasure of the moment, that are bound to ensue.</p>
+					</div>
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="bi bi-stars text-green h3"></i></div>
+						<h3 class="te-title font-weight-bold">Cost Effective</h3>
+						<p class="te-text text-secondary">Obligations of business frequently occur that accepted all.
+						</p>
+					</div>
+					<div class="single-item te-icon-box mb-4">
+						<div class="icon-box te-icon"><i class="bi bi-stars h3 text-info"></i></div>
+						<h3 class="te-title font-weight-bold">Customization</h3>
+						<p class="te-text text-secondary">The wise man therefore always holds these matters to this
+							principle.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="contact-main" id="contact">
+		<div class="container">
+			<div class="title text-center">
+				<span class="text-white">Contact with us</span>
+				<h2 class="heading1">Send Message</h2>
+			</div>
+
+			<div class="row">
+				<!-- Contact Form -->
+				<div class="col-12 col-md-8">
+					<div class="wpcf7 js" id="wpcf7-f247-p9-o1" lang="en-US" dir="ltr">
+						<div class="screen-reader-response">
+							<p role="status" aria-live="polite" aria-atomic="true"></p>
+							<ul></ul>
+						</div>
+						<form action="#" method="post" class="wpcf7-form">
+							<div class="contact-form">
+								<div class="form-group">
+									<input type="text" class="form-control" name="name" placeholder="Your full name">
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" name="email"
+										placeholder="Your email address">
+								</div>
+								<div class="form-group">
+									<textarea name="message" class="form-control" rows="4"
+										placeholder="What you are looking for?"></textarea>
+								</div>
+								<button type="submit" class="btn btn-warning">Submit Now</button>
+							</div>
+							<div class="form-result"></div>
+						</form>
+					</div>
+				</div>
+
+				<!-- Contact Info -->
+				<div class="col-12 col-md-4 text-center contact_info">
+					<div class="title">
+						<span>Contact info</span>
+						<h2>Details</h2>
+					</div>
+
+					<div class="single-contact-info">
+						<h4>Address</h4>
+						<p>123,building name,xyz street,Sivakasi - 626123.</p>
+					</div>
+
+					<div class="single-contact-info">
+						<h4>Phone</h4>
+						<p>Local: 04562-999999 <br> Mobile: +91 99999 99999</p>
+					</div>
+
+					<div class="single-contact-info">
+						<h4>Email</h4>
+						<p>needhelp@demoprintz.com <br> inquiry@demoprintz.com</p>
+					</div>
+
+					<div class="single-contact-info">
+						<h4>Follow</h4>
+						<div class="social">
+							<a href="#" class="fab fa-facebook-f"></a>
+							<a href="#" class="fab fa-vimeo-v"></a>
+							<a href="#" class="fab fa-twitter"></a>
+							<a href="#" class="fab fa-youtube"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container-fluid p-0 m-0">
+		<div class="row">
+			<div class="col-12">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62970.01160346889!2d77.75142297351574!3d9.454179599892328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cee43d812d0d%3A0x8ce12e9dcdaa2a2c!2sSivakasi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738684672622!5m2!1sen!2sin"
+					width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -1264,7 +1400,7 @@
 		console.log("WOW.js initialized");
 	</script>
 	<script src="js/script.js"></script>
-	<footer class="footer bg-main wow slideInUp">
+	<!-- <footer class="footer bg-main wow slideInUp">
 		<svg class="footer-svg d-none d-md-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.52"
 			preserveAspectRatio="none">
 			<path d="M0 3.528S27.04 3.352 35.278 0v3.528z" opacity=".2" fill="#34db"></path>
@@ -1347,7 +1483,8 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
+
 </body>
 
 

@@ -83,25 +83,38 @@ $(function () {
 var counted = 0;
 $(window).scroll(function () {
   if ($(".counter").length > 0) {
+    // Calculate the point at which the counter should start
     var oTop = $(".counter").offset().top - window.innerHeight;
-    if (counted == 0 && $(window).scrollTop() > oTop) {
+    if (counted === 0 && $(window).scrollTop() > oTop) {
       $(".count").each(function () {
         var $this = $(this),
-          countTo = $this.attr("data-count");
-        $({
-          countNum: $this.text(),
-        }).animate(
-          {
-            countNum: countTo,
-          },
+          // Convert the target value to a float
+          countTo = parseFloat($this.attr("data-count")),
+          // Determine if the target is a decimal (has a remainder) or a whole number
+          isDecimal = countTo % 1 !== 0;
+
+        // Animate from the current number (ensure it's numeric) to the target value
+        $({ countNum: parseFloat($this.text()) }).animate(
+          { countNum: countTo },
           {
             duration: 2000,
             easing: "swing",
             step: function () {
-              $this.text(Math.floor(this.countNum));
+              if (isDecimal) {
+                // For decimals: display one decimal place
+                $this.text(this.countNum.toFixed(1));
+              } else {
+                // For whole numbers: display an integer
+                $this.text(Math.floor(this.countNum));
+              }
             },
             complete: function () {
-              $this.text(this.countNum);
+              // Ensure the final value is formatted properly
+              if (isDecimal) {
+                $this.text(this.countNum.toFixed(1));
+              } else {
+                $this.text(this.countNum);
+              }
             },
           }
         );
@@ -110,6 +123,7 @@ $(window).scroll(function () {
     }
   }
 });
+
 // // navbar scrolling
 $(document).ready(() => {
   const topbar = $(".topbar");
@@ -158,41 +172,6 @@ $(document).ready(function () {
   });
 });
 
-// // fireworks blasting
-// var myIndex = 0;
-// const container = document.querySelector(".fireworks-example");
-// console.log(container);
-// console.log(Fireworks);
-// const fireworks = new Fireworks(container, {
-//   rocketsPoint: 50,
-//   hue: { min: 0, max: 360 },
-//   delay: { min: 15, max: 30 },
-//   speed: 2,
-//   acceleration: 1.05,
-//   friction: 0.95,
-//   gravity: 1.5,
-//   particles: 50,
-//   trace: 3,
-//   explosion: 5,
-//   autoresize: true,
-//   brightness: {
-//     min: 50,
-//     max: 80,
-//     decay: { min: 0.015, max: 0.03 },
-//   },
-//   boundaries: {
-//     x: 50,
-//     y: 50,
-//     width: container.clientWidth,
-//     height: container.clientHeight,
-//   },
-//   sound: {
-//     enable: true,
-//     files: ["explosion0.mp3", "explosion1.html", "explosion2.html"],
-//     volume: { min: 1, max: 2 },
-//   },
-// });
-// fireworks.start();
 document.addEventListener("DOMContentLoaded", function () {
   let goTopBtn = document.getElementById("goTopBtn");
 
@@ -210,4 +189,75 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
   };
+});
+// Function to scroll to section and update the active class
+function scrollToSection(sectionId, offset = 0, event = null) {
+  if (event) event.preventDefault(); // Prevent default anchor behavior
+
+  const sectionElement = document.getElementById(sectionId);
+  if (sectionElement) {
+    // Calculate the position relative to the top of the document (not the viewport)
+    const rect = sectionElement.getBoundingClientRect();
+    const topPosition = rect.top + window.scrollY - offset;
+
+    // Scroll to the section with the desired offset
+    window.scrollTo({ top: topPosition, behavior: "smooth" });
+
+    // Update the URL (optional)
+    history.pushState(null, null, `#${sectionId}`);
+
+    // Close the navbar if it’s a mobile view
+    setTimeout(() => {
+      document.getElementById("toggles")?.click();
+    }, 1000);
+
+    // Update active class on navbar
+    updateActiveClass(sectionId);
+  }
+}
+
+// Function to update the active class
+function updateActiveClass(sectionId) {
+  // Remove 'active' class from all nav items
+  const navItems = document.querySelectorAll(".nav-item");
+  navItems.forEach((item) => item.classList.remove("active"));
+
+  // Add 'active' class to the current section
+  const activeNavItem = document.getElementById(`nav-${sectionId}`);
+  if (activeNavItem) {
+    activeNavItem.classList.add("active");
+  }
+}
+
+// Optional: Highlight the active section on scroll
+window.addEventListener("scroll", () => {
+  const sections = ["index", "about", "services", "gallery", "contact"];
+  let currentSection = null;
+
+  sections.forEach((sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (
+      section &&
+      section.getBoundingClientRect().top <= window.innerHeight / 2
+    ) {
+      currentSection = sectionId;
+    }
+  });
+
+  // Ensure that the "Home" section is active when at the top of the page
+  if (window.scrollY === 0) {
+    currentSection = "index"; // Set 'index' (Home) as active if at the top
+  }
+
+  if (currentSection) {
+    updateActiveClass(currentSection);
+  }
+});
+
+// Attach event listeners to nav links
+document.querySelectorAll(".nav-link").forEach(function (link) {
+  link.addEventListener("click", function (event) {
+    // Add the offset you want here, such as 60px to adjust the scroll position
+    scrollToSection(this.getAttribute("href").substring(1), 60, event);
+  });
 });
