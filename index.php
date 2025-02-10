@@ -285,17 +285,13 @@
 								<div class="shape shape-2"></div>
 								<div class="shape shape-3"></div>
 							</div>
-							<figure class="image image-1"><img decoding="async"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/about-1.jpg"
+							<figure class="image image-1"><img decoding="async" src="./images/about-1.jpg"
 									alt="Awesome Image"></figure>
-							<figure class="image image-2"><img decoding="async"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/about-2.jpg"
+							<figure class="image image-2"><img decoding="async" src="./images/about-2.jpg"
 									alt="Awesome Image"></figure>
-							<figure class="image image-3"><img decoding="async"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/about-3.jpg"
+							<figure class="image image-3"><img decoding="async" src="./images/about-3.jpg"
 									alt="Awesome Image"></figure>
-							<figure class="image image-4"><img decoding="async"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/about-1.png"
+							<figure class="image image-4"><img decoding="async" src="./images/about-1.png"
 									alt="Awesome Image"></figure>
 						</div>
 					</div>
@@ -346,23 +342,17 @@
 						data-wow-duration="1500ms"
 						style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
 						<div class="inner-box te-service-block text-center">
-							<div class="shape"
-								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-5.png);">
-							</div>
-							<div class="overlay-shape"
-								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-6.png);">
-							</div>
-							<h3><a class="ser-title"
-									href="https://wp1.themevibrant.com/newwp/printpark/service/banners/">Banners</a>
+							<div class="shape"></div>
+							<div class="overlay-shape"></div>
+							<h3><a class="ser-title" href="#">Banners</a>
 							</h3>
 							<p class="ser-text">Take a trivial example, which of us ever…</p>
 							<figure class="image-box"><img decoding="async" width="220" height="220"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-1.jpg"
-									class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image" alt=""
-									srcset="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-1.jpg 220w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-1-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-1-50x50.jpg 50w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-1-200x200.jpg 200w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-1-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-1-80x80.jpg 80w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-1-118x118.jpg 118w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-1-100x100.jpg 100w"
-									sizes="(max-width: 220px) 100vw, 220px"></figure>
+									src="./images/categories-1.jpg"
+									class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image"
+									alt="categories" title="Demo Printz"></figure>
 							<div class="link-box">
-								<a class="te-btn" href="https://wp1.themevibrant.com/newwp/printpark/service/banners/">
+								<a class="te-btn" href="#">
 									Read More
 								</a>
 							</div>
@@ -374,23 +364,18 @@
 						data-wow-duration="1500ms"
 						style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
 						<div class="inner-box te-service-block text-center">
-							<div class="shape"
-								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-5.png);">
+							<div class="shape"></div>
+							<div class="overlay-shape">
 							</div>
-							<div class="overlay-shape"
-								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-6.png);">
-							</div>
-							<h3><a class="ser-title"
-									href="https://wp1.themevibrant.com/newwp/printpark/service/booklets/">Booklets</a>
+							<h3><a class="ser-title" href="#">Booklets</a>
 							</h3>
 							<p class="ser-text">But who has any right to find fault…</p>
 							<figure class="image-box"><img decoding="async" width="220" height="220"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-2.jpg"
-									class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image" alt=""
-									srcset="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-2.jpg 220w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-2-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-2-50x50.jpg 50w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-2-200x200.jpg 200w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-2-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-2-80x80.jpg 80w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-2-118x118.jpg 118w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-2-100x100.jpg 100w"
-									sizes="(max-width: 220px) 100vw, 220px"></figure>
+									src="./images/categories-2.jpg"
+									class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image"
+									alt="categories" title="Demo Printz"></figure>
 							<div class="link-box">
-								<a class="te-btn" href="https://wp1.themevibrant.com/newwp/printpark/service/booklets/">
+								<a class="te-btn" href="#">
 									Read More
 								</a>
 							</div>
@@ -402,24 +387,17 @@
 						data-wow-duration="1500ms"
 						style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
 						<div class="inner-box te-service-block text-center">
-							<div class="shape"
-								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-5.png);">
-							</div>
-							<div class="overlay-shape"
-								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-6.png);">
-							</div>
-							<h3><a class="ser-title"
-									href="https://wp1.themevibrant.com/newwp/printpark/service/business-cards/">Business
+							<div class="shape"></div>
+							<div class="overlay-shape"></div>
+							<h3><a class="ser-title" href="#">Business
 									Cards</a></h3>
 							<p class="ser-text">Nor again is there anyone who loves or…</p>
 							<figure class="image-box"><img decoding="async" width="220" height="220"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-3.jpg"
-									class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image" alt=""
-									srcset="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-3.jpg 220w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-3-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-3-50x50.jpg 50w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-3-200x200.jpg 200w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-3-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-3-80x80.jpg 80w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-3-118x118.jpg 118w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-3-100x100.jpg 100w"
-									sizes="(max-width: 220px) 100vw, 220px"></figure>
+									src="./images/categories-3.jpg"
+									class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image"
+									alt="categories" title="Demo Printz"></figure>
 							<div class="link-box">
-								<a class="te-btn"
-									href="https://wp1.themevibrant.com/newwp/printpark/service/business-cards/">
+								<a class="te-btn" href="#">
 									Read More
 								</a>
 							</div>
@@ -431,24 +409,17 @@
 						data-wow-duration="1500ms"
 						style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
 						<div class="inner-box te-service-block text-center">
-							<div class="shape"
-								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-5.png);">
-							</div>
-							<div class="overlay-shape"
-								style="background-image: url(https://wp1.themevibrant.com/newwp/printpark/wp-content/themes/printpark/assets/images/shape/shape-6.png);">
-							</div>
-							<h3><a class="ser-title"
-									href="https://wp1.themevibrant.com/newwp/printpark/service/calendars/">Calendars</a>
+							<div class="shape"></div>
+							<div class="overlay-shape"></div>
+							<h3><a class="ser-title" href="#">Calendars</a>
 							</h3>
 							<p class="ser-text">Which of us ever undertakes laborious physical exercise,…</p>
 							<figure class="image-box"><img loading="lazy" decoding="async" width="220" height="220"
-									src="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-4.jpg"
-									class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image" alt=""
-									srcset="https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-4.jpg 220w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-4-150x150.jpg 150w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-4-50x50.jpg 50w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-4-200x200.jpg 200w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-4-70x70.jpg 70w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-4-80x80.jpg 80w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-4-118x118.jpg 118w, https://wp1.themevibrant.com/newwp/printpark/wp-content/uploads/2023/08/categories-4-100x100.jpg 100w"
-									sizes="(max-width: 220px) 100vw, 220px"></figure>
+									src="./images/categories-4.jpg"
+									class="attachment-printpark_220x220 size-printpark_220x220 wp-post-image"
+									alt="categories" title="Demo Printz"></figure>
 							<div class="link-box">
-								<a class="te-btn"
-									href="https://wp1.themevibrant.com/newwp/printpark/service/calendars/">
+								<a class="te-btn" href="#">
 									Read More
 								</a>
 							</div>
