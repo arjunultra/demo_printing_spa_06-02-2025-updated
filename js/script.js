@@ -246,7 +246,7 @@ window.addEventListener("scroll", () => {
 
   // Ensure that the "Home" section is active when at the top of the page
   if (window.scrollY === 0) {
-    currentSection = "index"; // Set 'index' (Home) as active if at the top
+    currentSection = "home"; // Set 'index' (Home) as active if at the top
   }
 
   if (currentSection) {

@@ -1247,7 +1247,7 @@
 					<div class="image-box position-relative">
 						<div class="image-shape-middle">
 							<figure class="image">
-								<img decoding="async" class="img-fluid rounded-circle" src="./images/pdtimg-3.png"
+								<img decoding="async" class="img-fluid w-75 rounded-circle" src="./images/pdtimg.webp"
 									alt="Awesome Image" title="Demo Printz">
 							</figure>
 						</div>
