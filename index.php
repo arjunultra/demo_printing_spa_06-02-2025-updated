@@ -955,7 +955,7 @@
 							</span>
 							Projects
 						</h6>
-						<h2 class="te-title printpark-size-default h1 font-weight-bold">
+						<h2 class="main-heading h1 font-weight-bold">
 							Explore our Recent Projects
 						</h2>
 					</div>
@@ -1156,7 +1156,7 @@
 				<div class="col-12">
 					<!-- Container with background image -->
 					<div class="image-container d-flex flex-column justify-content-center align-items-center">
-						<h3 class="text-uppercase font-weight-bold text-white text-center mb-5">
+						<h3 class="text-uppercase main-heading text-white text-center mb-5">
 							We are your one stop shop for all your printing needs
 						</h3>
 						<a class="theme-btn" href="#contact" onclick="scrollToSection('contact', -160)">Contact Us</a>
@@ -1174,7 +1174,7 @@
 						<h6 class="heading6 small-font arial font-weight-bold"><i class="bi bi-arrow-right-square h6">
 							</i> Why Demo
 							Printz</h6>
-						<h2 class="font-weight-bold heading1">Deliver More than you Expect</h2>
+						<h2 class="font-weight-bold heading1 main-heading">Deliver More than you Expect</h2>
 						<p class="text-muted">Unmatched quality, timely delivery, eco-friendly practices, and
 							exceptional customer service.
 						</p>
@@ -1186,19 +1186,19 @@
 				<div class="col-12 col-md-4 col-lg-4 text-center">
 					<div class="single-item te-icon-box mb-4">
 						<div class="icon-box"><i class="bi bi-stars text-main h3"></i></div>
-						<h3 class="te-title font-weight-bold">Professionalism</h3>
+						<h3 class="te-title font-weight-bold main-heading">Professionalism</h3>
 						<p class="te-text text-secondary">Obligations of business frequently occur that accepted all.
 						</p>
 					</div>
 					<div class="single-item te-icon-box mb-4">
 						<div class="icon-box te-icon"><i class="h3 text-green bi bi-stars"></i></div>
-						<h3 class="te-title font-weight-bold">Expertise</h3>
+						<h3 class="te-title font-weight-bold main-heading">Expertise</h3>
 						<p class="te-text text-secondary">The wise man therefore always holds these matters to this
 							principle.</p>
 					</div>
 					<div class="single-item te-icon-box mb-4">
 						<div class="icon-box te-icon"><i class="bi bi-stars text-info h3"></i></div>
-						<h3 class="te-title font-weight-bold">Competitive Prices</h3>
+						<h3 class="te-title font-weight-bold main-heading">Competitive Prices</h3>
 						<p class="te-text text-secondary">Charms of pleasure of the moment, that are bound to ensue.</p>
 					</div>
 				</div>
@@ -1219,18 +1219,18 @@
 				<div class="col-12 col-md-4 col-lg-4 text-center">
 					<div class="single-item te-icon-box mb-4">
 						<div class="icon-box te-icon"><i class="bi bi-stars h3 text-main"></i></div>
-						<h3 class="te-title font-weight-bold">Quality Service</h3>
+						<h3 class="te-title font-weight-bold main-heading">Quality Service</h3>
 						<p class="te-text text-secondary">Charms of pleasure of the moment, that are bound to ensue.</p>
 					</div>
 					<div class="single-item te-icon-box mb-4">
 						<div class="icon-box te-icon"><i class="bi bi-stars text-green h3"></i></div>
-						<h3 class="te-title font-weight-bold">Cost Effective</h3>
+						<h3 class="te-title font-weight-bold main-heading">Cost Effective</h3>
 						<p class="te-text text-secondary">Obligations of business frequently occur that accepted all.
 						</p>
 					</div>
 					<div class="single-item te-icon-box mb-4">
 						<div class="icon-box te-icon"><i class="bi bi-stars h3 text-info"></i></div>
-						<h3 class="te-title font-weight-bold">Customization</h3>
+						<h3 class="te-title font-weight-bold main-heading">Customization</h3>
 						<p class="te-text text-secondary">The wise man therefore always holds these matters to this
 							principle.</p>
 					</div>
@@ -1244,7 +1244,7 @@
 		<div class="container">
 			<div class="title text-center">
 				<span class="small-font">Contact us</span>
-				<h2 class="heading1">Send Message</h2>
+				<h2 class="heading1 main-heading">Send Message</h2>
 			</div>
 
 			<div class="row">
@@ -1282,27 +1282,27 @@
 				<!-- Contact Info -->
 				<div class="col-12 col-md-4 text-center contact_info">
 					<div class="title">
-						<span>Contact info</span>
-						<h2>Details</h2>
+						<span class="small-font">Contact info</span>
+						<h2 class="main-heading">Details</h2>
 					</div>
 
 					<div class="single-contact-info">
-						<h4>Address</h4>
+						<h4 class="main-heading">Address</h4>
 						<p>123,building name,xyz street,Sivakasi - 626123.</p>
 					</div>
 
 					<div class="single-contact-info">
-						<h4>Phone</h4>
+						<h4 class="main-heading">Phone</h4>
 						<p>Local: 04562-999999 <br> Mobile: +91 99999 99999</p>
 					</div>
 
 					<div class="single-contact-info">
-						<h4>Email</h4>
+						<h4 class="main-heading">Email</h4>
 						<p>needhelp@demoprintz.com <br> inquiry@demoprintz.com</p>
 					</div>
 
 					<div class="single-contact-info">
-						<h4>Follow</h4>
+						<h4 class="main-heading">Follow</h4>
 						<div class="social">
 							<a href="#" class="fab fa-facebook-f hvr-pulse"></a>
 							<a href="#" class="fab fa-instagram hvr-pulse"></a>

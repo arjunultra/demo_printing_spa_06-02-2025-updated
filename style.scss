@@ -38,6 +38,10 @@ h6 {
 p {
   font-family: Helvetica, sans-serif;
 }
+a.btn {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
 .heading1 {
   font-size: 2.5rem;
 }
@@ -447,7 +451,7 @@ section.index-two {
         right: -125px;
         font-size: 110px;
         line-height: 100px;
-        font-family: "Urbanist", sans-serif;
+        font-family: "Rubik", serif;
         color: #fff;
         font-weight: 900;
         text-transform: uppercase;
@@ -498,7 +502,7 @@ section.index-two {
           font-size: 14px;
           line-height: 26px;
           font-weight: 800;
-          font-family: "Urbanist", sans-serif;
+          font-family: "Rubik", serif;
           text-align: center;
           padding: 14px 30px;
           text-transform: uppercase;
@@ -698,7 +702,7 @@ section.index-two {
     font-size: 14px;
     line-height: 26px;
     font-weight: 800;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Rubik", serif;
     text-align: center;
     padding: 14px 30px;
     text-transform: uppercase;
@@ -775,7 +779,7 @@ section.index-two {
   display: inline-block;
   font-size: 16px;
   line-height: 26px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Rubik", serif;
   color: #0c0c0c;
   font-weight: 800;
   padding: 12px 20px;
@@ -851,7 +855,9 @@ section.categories-section {
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
-    font: 800 14px/26px "Urbanist", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Rubik", serif;
     text-align: center;
     padding: 14px 30px;
     text-transform: uppercase;
@@ -992,7 +998,7 @@ section.categories-section {
       a {
         position: relative;
         display: inline-block;
-        font: 800 14px/24px "Urbanist", sans-serif;
+        font: 800 14px/24px "Rubik", sans-serif;
         color: #0c0c0c;
         text-transform: uppercase;
         padding-left: 32px;
@@ -1024,7 +1030,7 @@ section.categories-section {
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
-    font: 800 14px/26px "Urbanist", sans-serif;
+    font: 800 14px/26px "Rubik", sans-serif;
     text-align: center;
     padding: 14px 30px;
     text-transform: uppercase;
@@ -1406,8 +1412,6 @@ section.tab-section {
 section.contact-section {
   .image-container {
     background-image: url("../images/cta-bg-2-1.webp");
-    background-color: #00000063;
-    background-blend-mode: soft-light;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -1425,7 +1429,7 @@ section.contact-section {
       font-size: 14px;
       line-height: 26px;
       font-weight: 800;
-      font-family: "Urbanist", sans-serif;
+      font-family: "Rubik", sans-serif;
       text-align: center;
       padding: 14px 30px;
       text-transform: uppercase;
@@ -1483,7 +1487,7 @@ section.infra-section {
         font-size: 14px;
         line-height: 26px;
         font-weight: 800;
-        font-family: "Urbanist", sans-serif;
+        font-family: "Rubik", sans-serif;
         text-align: center;
         padding: 14px 30px;
         text-transform: uppercase;

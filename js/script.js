@@ -53,27 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
     effect: "fade", // Effect type (can be customized)
   });
 });
-// jquery
-// Navbar scroll effect
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() > 50) {
-//     $(".navbar").addClass("scrolled");
-//   } else {
-//     $(".navbar").removeClass("scrolled");
-//   }
-// });
-
-// Smooth scroll for navigation links
-// $(".nav-link").on("click", function (e) {
-//   e.preventDefault();
-//   const hash = this.hash;
-//   $("html, body").animate(
-//     {
-//       scrollTop: $(hash).offset().top - 70,
-//     },
-//     800
-//   );
-// });
 
 // Initialize Bootstrap components
 $(function () {
@@ -123,8 +102,11 @@ $(window).scroll(function () {
     }
   }
 });
+// show nav and hide topbar
 
 $(document).ready(function () {
+  new WOW().init(); // Initialize WOW.js
+
   const topbar = $(".topbar");
   const navbar = $(".navbar");
   const spacer = $(".spacer");
@@ -133,27 +115,27 @@ $(document).ready(function () {
   $(window).on("scroll", function () {
     let scrollTop = $(this).scrollTop();
 
-    // Scroll Down: Hide topbar, show navbar
+    // Scroll Down: Hide topbar, fix navbar
     if (scrollTop > 450 && scrollTop > lastScrollTop) {
-      topbar.css("transform", "translateY(-100%)"); // Hide topbar smoothly
-      navbar.addClass("fixed-nav"); // Ensure navbar stays in place
+      topbar.addClass("animated fadeOutUp").removeClass("fadeInDown"); // Hide topbar
+      navbar.addClass("fixed-nav animated fadeInDown").removeClass("fadeOutUp");
       spacer.show();
     }
-    // Scroll Up: Slide navbar up and hide navbar
+    // Scroll Up: Show both navbar and topbar with animation
     else if (scrollTop < lastScrollTop) {
-      topbar.css("transform", "translateY(0)"); // Show topbar smoothly
-      navbar.removeClass("fixed-nav"); // Make navbar slide up
+      topbar.addClass("animated fadeInDown").removeClass("fadeOutUp"); // Show topbar
+      navbar.addClass("fixed-nav animated fadeInDown").removeClass("fadeOutUp");
       spacer.hide();
     }
 
-    // When at the top of the page
+    // At the top of the page: Show both topbar & navbar with animation
     if (scrollTop <= 0) {
-      topbar.css("transform", "translateY(0)"); // Show topbar at the top
-      navbar.removeClass("fixed-nav"); // Slide navbar back up
+      topbar.addClass("animated fadeInDown").removeClass("fadeOutUp"); // Animate topbar
+      navbar.removeClass("fixed-nav fadeOutUp").addClass("animated fadeInDown"); // Animate navbar
       spacer.hide();
     }
 
-    lastScrollTop = scrollTop; // Update lastScrollTop to current scroll position
+    lastScrollTop = scrollTop; // Update lastScrollTop
   });
 });
 
