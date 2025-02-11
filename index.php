@@ -118,7 +118,7 @@
 		</div>
 	</div>
 	<!-- about -->
-	<section class="about-section pad" id="about">
+	<section class="about-section pad wow fadeInUp" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-6">
@@ -142,8 +142,8 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-6">
 					<div class="sec-title">
-						<h6 class="subtitle">Who We Are</h6>
-						<h2 class="title font-weight-bold">Leading Printing Company in Sivakasi</h2>
+						<h6 class="subtitle small-font">Who We Are</h6>
+						<h2 class="main-heading text-uppercase">Leading Printing Company in Sivakasi</h2>
 						<p class="text-muted lead py-3">At Demo Printz, we take pride in delivering high-quality,
 							customized
 							printing
@@ -169,15 +169,15 @@
 			</div>
 		</div>
 	</section>
-	<section class="index-two pad">
+	<section class="index-two pad wow fadeInUp">
 		<div class="container pad">
-			<div class="row">
+			<div class="row no-gutters">
 				<div class="col-12 col-md-6 col-lg-6">
 					<!-- lhs -->
 					<div class="content-box cta-section">
 						<span class="big-text d-none d-md-block">numbers</span>
 						<div class="light">
-							<h6 class="subtitle">Interesting Numbers</h6>
+							<h6 class="subtitle small-font">Interesting Numbers</h6>
 							<h2 class="title heading4">Proud of our Past, Printing for the Future</h2>
 						</div>
 						<div class="text-box">
@@ -236,10 +236,10 @@
 		</div>
 	</section>
 	<!-- index-card  -->
-	<section class="index-one pad" id="services">
+	<section class="index-one pad wow fadeInUp" id="services">
 		<div class="container text-center">
-			<h2 class="small-heading h6 text-uppercase text-main font-weight-bold text-center">services</h2>
-			<h3 class="heading text-capitalize text-center font-weight-bold h1 text-dark my-text">Quality Printing &
+			<h2 class="small-heading h6 text-uppercase text-main font-weight-bold text-center small-font">services</h2>
+			<h3 class="heading text-capitalize text-center font-weight-bold h1 main-heading my-text">Quality Printing &
 				<br>
 				Tailored
 				Printing
@@ -319,10 +319,11 @@
 			<div class="row">
 				<!-- text -->
 				<div class="sec-title">
-					<h6 class="subtitle text-uppercase font-weight-bold text-center text-main"><span
+					<h6 class="subtitle text-uppercase font-weight-bold text-center small-font"><span
 							class="text-main"><i class="bi bi-arrow-right-square h5"></i></span> categories</h6>
-					<h2 class="title font-weight-bold text-center">The Complete Printing Solution</h2>
-					<p class="text-muted lead py-3">Explore our diverse printing categories, from business cards and
+					<h2 class="main-heading text-center">The Complete Printing Solution</h2>
+					<p class="text-muted lead p-3 text-center">Explore our diverse printing categories, from business
+						cards and
 						brochures to posters and banners—high-quality prints tailored to your needs.</p>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12 categories-block">
@@ -332,7 +333,7 @@
 						<div class="inner-box te-service-block text-center">
 							<div class="shape"></div>
 							<div class="overlay-shape"></div>
-							<h3><a class="ser-title" href="#">Banners</a>
+							<h3><a class="main-heading" href="#">Banners</a>
 							</h3>
 							<p class="ser-text">Take a trivial example, which of us ever…</p>
 							<figure class="image-box"><img decoding="async" width="220" height="220"
@@ -355,7 +356,7 @@
 							<div class="shape"></div>
 							<div class="overlay-shape">
 							</div>
-							<h3><a class="ser-title" href="#">Booklets</a>
+							<h3><a class="main-heading" href="#">Booklets</a>
 							</h3>
 							<p class="ser-text">But who has any right to find fault…</p>
 							<figure class="image-box"><img decoding="async" width="220" height="220"
@@ -377,7 +378,7 @@
 						<div class="inner-box te-service-block text-center">
 							<div class="shape"></div>
 							<div class="overlay-shape"></div>
-							<h3><a class="ser-title" href="#">Business
+							<h3><a class="main-heading" href="#">Business
 									Cards</a></h3>
 							<p class="ser-text">Nor again is there anyone who loves or…</p>
 							<figure class="image-box"><img decoding="async" width="220" height="220"
@@ -399,7 +400,7 @@
 						<div class="inner-box te-service-block text-center">
 							<div class="shape"></div>
 							<div class="overlay-shape"></div>
-							<h3><a class="ser-title" href="#">Calendars</a>
+							<h3><a class="main-heading" href="#">Calendars</a>
 							</h3>
 							<p class="ser-text">Which of us ever undertakes laborious physical exercise,…</p>
 							<figure class="image-box"><img loading="lazy" decoding="async" width="220" height="220"
@@ -417,19 +418,19 @@
 			</div>
 			<div class="row">
 				<div class="col-12 text-center">
-					<a class="theme-btn" href="#">more categories</a>
+					<a class="theme-btn" href="#contact" onclick="scrollToSection('contact', -160)">contact us</a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- tab section -->
 	<section class="tab-section pad">
-		<div class="container">
+		<div class="container wow fadeInUp">
 			<!-- Nav tabs -->
 			<ul class="nav nav-tabs justify-content-center mb-4" id="serviceTab" role="tablist">
 				<li class="nav-item">
 					<a class="nav-link text-center active" id="flyer-tab" data-toggle="tab" href="#tshirt" role="tab"
-						aria-controls="flyer" aria-selected="false">
+						aria-controls="tshirt" aria-selected="false">
 						<i class="fa fa-shirt tab-icon"></i>
 						<div class="mt-5">T-shirt<br>Printing</div>
 					</a>
@@ -476,9 +477,9 @@
 				<!-- T-Shirt Printing Tab -->
 				<div class="tab-pane fade show active" id="tshirt" role="tabpanel" aria-labelledby="tshirt-tab">
 					<div class="text-center mb-4">
-						<h6 class="font-weight-bold text-main"><i class="bi bi-arrow-right-square h6">
-							</i> Our services</h6>
-						<h3 class="font-weight-bold">T-Shirt Printing</h3>
+						<h6 class="font-weight-bold small-font"><i class="bi bi-arrow-right-square h6">
+							</i> Our other services</h6>
+						<h3 class="main-heading">T-Shirt Printing</h3>
 						<p>
 							Choose the perfect design. We start at premium and go all the way to extra fancy.
 							Options include original single-sided tshirts (writeable on one side) without an envelope,
@@ -503,7 +504,7 @@
 						<!-- Design Guideline -->
 						<div class="col-md-6">
 							<div class="mb-3">
-								<h3>Download a Design Guideline</h3>
+								<h3 class="main-heading">Download a Design Guideline</h3>
 								<ul class="list-unstyled">
 									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
 									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
@@ -551,9 +552,9 @@
 				<!-- Flyer Printing Tab -->
 				<div class="tab-pane fade" id="flyer" role="tabpanel" aria-labelledby="flyer-tab">
 					<div class="text-center mb-4">
-						<h6 class="font-weight-bold text-main"><i class="bi bi-arrow-right-square h6">
+						<h6 class="font-weight-bold small-font"><i class="bi bi-arrow-right-square h6">
 							</i> Our services</h6>
-						<h3 class="font-weight-bold">Flyer Printing</h3>
+						<h3 class="font-weight-bold main-heading">Flyer Printing</h3>
 						<p>
 							Choose the perfect design. We start at premium and go all the way to extra fancy.
 							Options include original single-sided flyers (writeable on one side) without an envelope,
@@ -575,7 +576,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="mb-3">
-								<h3>Download a Design Guideline</h3>
+								<h3 class="main-heading">Download a Design Guideline</h3>
 								<ul class="list-unstyled">
 									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
 									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
@@ -623,9 +624,9 @@
 				<!-- Poster Printing Tab -->
 				<div class="tab-pane fade" id="poster" role="tabpanel" aria-labelledby="poster-tab">
 					<div class="text-center mb-4">
-						<h6 class="text-main font-weight-bold"><i class="bi bi-arrow-right-square h6">
+						<h6 class="small-font font-weight-bold"><i class="bi bi-arrow-right-square h6">
 							</i> Our services</h6>
-						<h3 class="font-weight-bold">Poster Printing</h3>
+						<h3 class="font-weight-bold main-heading">Poster Printing</h3>
 						<p>
 							Choose the perfect design. We start at premium and go all the way to extra fancy.
 							Options include original single-sided Posters (writeable on one side) without an envelope,
@@ -647,7 +648,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="mb-3">
-								<h3>Download a Design Guideline</h3>
+								<h3 class="main-heading">Download a Design Guideline</h3>
 								<ul class="list-unstyled">
 									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
 									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
@@ -695,9 +696,9 @@
 				<!-- Sticker Printing Tab -->
 				<div class="tab-pane fade" id="sticker" role="tabpanel" aria-labelledby="sticker-tab">
 					<div class="text-center mb-4">
-						<h6 class="text-main font-weight-bold"><i class="bi bi-arrow-right-square h6">
+						<h6 class="small-font font-weight-bold"><i class="bi bi-arrow-right-square h6">
 							</i> Our services</h>
-							<h3 class="font-weight-bold">Sticker Printing</h3>
+							<h3 class="font-weight-bold main-heading">Sticker Printing</h3>
 							<p>
 								Choose the perfect design. We start at premium and go all the way to extra fancy.
 								Options include original single-sided stickers (writeable on one side) without an
@@ -721,7 +722,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="mb-3">
-								<h3>Download a Design Guideline</h3>
+								<h3 class="main-heading">Download a Design Guideline</h3>
 								<ul class="list-unstyled">
 									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
 									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
@@ -769,8 +770,8 @@
 				<!-- Postcard Printing Tab -->
 				<div class="tab-pane fade" id="postcard" role="tabpanel" aria-labelledby="postcard-tab">
 					<div class="text-center mb-4">
-						<h6 class="text-main font-weight-bold">Our services</h6>
-						<h3 class="font-weight-bold">Postcard Printing</h3>
+						<h6 class="small-font font-weight-bold">Our services</h6>
+						<h3 class="font-weight-bold main-heading">Postcard Printing</h3>
 						<p>
 							Choose the perfect design. We start at premium and go all the way to extra fancy.
 							Options include original single-sided postcards (writeable on one side) without an envelope,
@@ -793,7 +794,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="mb-3">
-								<h3>Download a Design Guideline</h3>
+								<h3 class="main-heading">Download a Design Guideline</h3>
 								<ul class="list-unstyled">
 									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
 									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
@@ -840,9 +841,9 @@
 				<!-- Book Printing Tab -->
 				<div class="tab-pane fade show" id="books" role="tabpanel" aria-labelledby="books-tab">
 					<div class="text-center mb-4">
-						<h6 class="font-weight-bold text-main"><i class="bi bi-arrow-right-square h6">
+						<h6 class="font-weight-bold small-font"><i class="bi bi-arrow-right-square h6">
 							</i> Our services</h6>
-						<h3 class="font-weight-bold">Book Printing</h3>
+						<h3 class="font-weight-bold main-heading">Book Printing</h3>
 						<p>
 							Choose the perfect design. We start at premium and go all the way to extra fancy.
 							Options include original single-sided Book (writeable on one side) without an envelope,
@@ -867,7 +868,7 @@
 						<!-- Design Guideline -->
 						<div class="col-md-6">
 							<div class="mb-3">
-								<h3>Download a Design Guideline</h3>
+								<h3 class="main-heading">Download a Design Guideline</h3>
 								<ul class="list-unstyled">
 									<li><strong>Bleed:</strong> 2.91” x 1.26”</li>
 									<li><strong>Trim:</strong> 2.75” x 1.10”</li>
@@ -914,81 +915,41 @@
 			</div><!-- /.tab-content -->
 		</div>
 	</section>
-	<!-- brands -->
-	<section class="brands-section  bg-main py-5 wow fadeIn" data-wow-duration="1s">
-		<div class="container">
-			<h2 class="section-title text-center mb-5 text-main font-weight-bold h1 my-text">Brands We Handle</h2>
-			<!-- Owl Carousel Container -->
-			<div class="custom1 owl-carousel">
-				<!-- Brand 1 -->
-				<div class="item border px-3">
-					<div class="brand-card hvr-grow">
-						<div class="brand-logo">
-							<img src="images/1.webp" alt=" brandlogo" class="img-fluid">
+	<!-- cta 2 -->
+	<section class="infra-section pad">
+		<div class="container-fluid">
+			<div class="row no-gutters">
+				<div class="col-12">
+					<!-- Container with background image -->
+					<div class="text-container d-flex flex-column justify-content-center align-items-center">
+						<h3 class="text-uppercase font-weight-bold text-center mb-5">
+							The Pinnacle of Printing Excellence
+						</h3>
+						<p class="text-white p-3 text-center text-md-left">
+							At Demo Printz, our state-of-the-art infrastructure is the backbone of our exceptional
+							printing services.
+							Our facility is equipped with the latest offset printing technology, ensuring high-quality
+							and precise
+							prints for every project. Our infrastructure reflects our commitment to delivering superior
+							printing
+							solutions to our clients.
+						</p>
+						<div>
+							<a class="theme-btn" href="#services">Services</a>
 						</div>
-						<!-- <h3 class="brand-name">PyroExplode</h3> -->
-					</div>
-				</div>
-
-				<!-- Brand 2 -->
-				<div class="item border px-3">
-					<div class="brand-card hvr-grow">
-						<div class="brand-logo">
-							<img src="images/2.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
-						</div>
-						<!-- <h3 class="brand-name">SkyBlasters</h3> -->
-					</div>
-				</div>
-
-				<!-- Brand 3 -->
-				<div class="item border px-3">
-					<div class="brand-card hvr-grow">
-						<div class="brand-logo">
-							<img src="images/3.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
-						</div>
-						<!-- <h3 class="brand-name">NightFury</h3> -->
-					</div>
-				</div>
-
-				<!-- Brand 4 -->
-				<div class="item border px-3">
-					<div class="brand-card hvr-grow">
-						<div class="brand-logo">
-							<img src="images/4.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
-						</div>
-						<!-- <h3 class="brand-name">RocketRage</h3> -->
-					</div>
-				</div>
-
-				<!-- Brand 5 -->
-				<div class="item border px-3">
-					<div class="brand-card hvr-grow">
-						<div class="brand-logo">
-							<img src="images/5.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
-						</div>
-						<!-- <h3 class="brand-name">BlastWave</h3> -->
-					</div>
-				</div>
-
-				<!-- Brand 6 -->
-				<div class="item border px-3">
-					<div class="brand-card hvr-grow">
-						<div class="brand-logo">
-							<img src="images/6.webp" alt="Brand 2 Logo" class="img-fluid" loading="lazy">
-						</div>
-						<!-- <h3 class="brand-name">FireStrike</h3> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<!-- projects section as gallery -->
-	<section class="project-section pad" id="gallery">
+	<section class="project-section pad wow fadeInUp" id="gallery">
 		<div class="container">
 			<div class="row align-items-center mb-5">
 				<div class="col-md-6">
 					<div class="sec-title">
-						<h6 class="subtitle text-main text-uppercase font-weight-bold">
+						<h6 class="subtitle small-font text-uppercase font-weight-bold">
 							<span class="text-main">
 								<i class="bi bi-arrow-right-square h5"></i>
 							</span>
@@ -1198,19 +1159,19 @@
 						<h3 class="text-uppercase font-weight-bold text-white text-center mb-5">
 							We are your one stop shop for all your printing needs
 						</h3>
-						<a class="theme-btn" href="#">Contact Us</a>
+						<a class="theme-btn" href="#contact" onclick="scrollToSection('contact', -160)">Contact Us</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- why us -- about -->
-	<section class="why-section pad">
+	<section class="why-section pad wow fadeInUp">
 		<div class="container">
 			<div class="row text-center mb-4">
 				<div class="col-12">
 					<div class="sec-title">
-						<h6 class="heading6 text-main arial font-weight-bold"><i class="bi bi-arrow-right-square h6">
+						<h6 class="heading6 small-font arial font-weight-bold"><i class="bi bi-arrow-right-square h6">
 							</i> Why Demo
 							Printz</h6>
 						<h2 class="font-weight-bold heading1">Deliver More than you Expect</h2>
@@ -1279,10 +1240,10 @@
 	</section>
 
 
-	<section class="contact-main" id="contact">
+	<section class="contact-main wow fadeInUp" id="contact">
 		<div class="container">
 			<div class="title text-center">
-				<span class="text-white">Contact with us</span>
+				<span class="small-font">Contact us</span>
 				<h2 class="heading1">Send Message</h2>
 			</div>
 
@@ -1302,6 +1263,10 @@
 								<div class="form-group">
 									<input type="email" class="form-control" name="email"
 										placeholder="Your email address">
+								</div>
+								<div class="form-group">
+									<input type="tel" class="form-control" name="phone"
+										placeholder="Your contact number">
 								</div>
 								<div class="form-group">
 									<textarea name="message" class="form-control" rows="4"
@@ -1339,27 +1304,43 @@
 					<div class="single-contact-info">
 						<h4>Follow</h4>
 						<div class="social">
-							<a href="#" class="fab fa-facebook-f"></a>
-							<a href="#" class="fab fa-vimeo-v"></a>
-							<a href="#" class="fab fa-twitter"></a>
-							<a href="#" class="fab fa-youtube"></a>
+							<a href="#" class="fab fa-facebook-f hvr-pulse"></a>
+							<a href="#" class="fab fa-instagram hvr-pulse"></a>
+							<a href="#" class="fab fa-twitter hvr-pulse"></a>
+							<a href="#" class="fab fa-youtube hvr-pulse"></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<div class="container-fluid p-0 m-0">
-		<div class="row">
-			<div class="col-12">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62970.01160346889!2d77.75142297351574!3d9.454179599892328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cee43d812d0d%3A0x8ce12e9dcdaa2a2c!2sSivakasi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738684672622!5m2!1sen!2sin"
-					width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<section class="map-section">
+		<div class="container-fluid p-0">
+			<div class="row no-gutters">
+				<div class="col-12">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62970.01160346889!2d77.75142297351574!3d9.454179599892328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cee43d812d0d%3A0x8ce12e9dcdaa2a2c!2sSivakasi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738684672622!5m2!1sen!2sin"
+						style="border:0; width:100vw; height:50vh; display:block;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
+	<footer class="footer-bottom bg-dark m-0 p-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center text-white m-0 p-0">
+					<p class="helvetica mb-0">Copyright © 2025, Demo Printz All rights reserved. Developed by <a
+							target="_blank" class="text-white" href="https://www.srisoftwarez.com/">
+							Sri
+							Softwarez
+						</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<div class="fixed point w0">
@@ -1380,16 +1361,30 @@
 			<img src="images/callicon.png" class="priceicn float-left" alt="" title="">
 		</a>
 	</div>
-	<div class="fixed point2">
-		<a href="products.php">
-			<img src="images/quickpurchase.png" class="priceicn2 float-right blink" alt="" title="">
-		</a>
-	</div>
-	<div id="top-btn">
+	<!-- <div id="top-btn">
+		<button id="goTopBtn" class="go-top">
+			<i class="bi bi-arrow-up"></i>
+		</button>
+	</div> -->
+	<!-- Progress Bar Wrapper -->
+	<!-- Progress Bar Wrap -->
+	<!-- Progress Circle Wrap -->
+	<div class="progress-wrap">
+		<!-- Go to Top Button -->
 		<button id="goTopBtn" class="go-top">
 			<i class="bi bi-arrow-up"></i>
 		</button>
 	</div>
+
+
+
+
+	<!-- Go to Top Button -->
+	<!-- <button id="goTopBtn" class="go-top">Go to Top</button> -->
+
+
+	<!-- Go to Top Button -->
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
@@ -1399,91 +1394,19 @@
 		new WOW().init();
 		console.log("WOW.js initialized");
 	</script>
+	<script src="js/marquee.js"></script>
+	<script>
+		$('.L').marquee({
+			duration: 16000,
+			gap: 150,
+			delayBeforeStart: 0,
+			direction: 'left',
+			duplicated: false,
+			pauseOnHover: true
+		});
+	</script>
 	<script src="js/script.js"></script>
-	<!-- <footer class="footer bg-main wow slideInUp">
-		<svg class="footer-svg d-none d-md-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.52"
-			preserveAspectRatio="none">
-			<path d="M0 3.528S27.04 3.352 35.278 0v3.528z" opacity=".2" fill="#34db"></path>
-			<path d="M0 3.528S27.04 3.374 35.278.425v3.103z" opacity=".2" fill="#3498db"></path>
-			<path d="M0 3.528S27.04 3.396 35.278.882v2.646z" fill="#3498db"></path>
-			<path d="M0 3.527h35.278v.092H0z" fill="#3498db"></path>
-		</svg>
-		<div class="container-fluid">
-			<div class="footer-top pt-5">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-12 d-flex flex-column align-items-center justify-content-start">
-						<h1 class="font-weight-bold text-white">Demo Printz</h1>
-						<div class="footer-logo w-25">
-							<a href="index.php"><img src="images/logo.webp" class="img-fluid w-100" alt="Demo Printz"
-									title="Demo Printz"></a>
-						</div>
-						<p class="helvetica text-white my-4">We supply all kinds of printing materials and allied
-							services with free delivery for orders above ₹1000.
-						</p>
-					</div>
 
-					<div class="col-lg-3 col-md-6 col-12 d-flex flex-column justify-content-start">
-						<h4 class="arial font-weight-bold footer-heading">Address</h4>
-						<ul class="fullpad">
-							<li class="helvetica text-white"><i class="bi bi-geo-alt"></i> &nbsp; Sivakasi, Tamil
-								Nadu
-								626123</li>
-						</ul>
-						<h4 class="arial pt-3 font-weight-bold footer-heading">Mobile</h4>
-						<ul class="fullpad">
-							<li class="helvetica text-white pfnt"><i class="bi bi-telephone"></i> &nbsp; +91 99999
-								99999
-							</li>
-						</ul>
-						<h4 class="arial pt-3 font-weight-bold footer-heading">Email</h4>
-						<ul class="fullpad">
-							<li class="helvetica text-white pfnt"><i class="bi bi-envelope"></i> &nbsp;
-								demotraders@gmail.com</li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-6 d-flex flex-column justify-content-start">
-						<h4 class="arial font-weight-bold footer-heading"> Quick Links </h4>
-						<ul class="helvetica pl-0 quick-link">
-							<li class="pt-2 mb-3"><a href="index.php"><i class="bi bi-caret-right-fill footclr"></i>
-									<span class="footclr1">Home</span></a></li>
-							<li class="pt-2 mb-3"><a href="about.php"><i class="bi bi-caret-right-fill footclr"></i>
-									<span class="footclr1">About</span></a></li>
-							<li class="pt-2 mb-3"><a href="products.php"><i class="bi bi-caret-right-fill footclr"></i>
-									<span class="footclr1">Products</span></a></li>
-							<li class="pt-2 mb-3"><a href="safety.php"><i class="bi bi-caret-right-fill footclr"></i>
-									<span class="footclr1">Safety</span></a></li>
-							<li class="pt-2 mb-3"><a href="contact.php"><i class="bi bi-caret-right-fill footclr"></i>
-									<span class="footclr1">Contact</span></a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-6 d-flex flex-column justify-content-start">
-						<h4 class="arial font-weight-bold pb-3 footer-heading">Working Hours</h4>
-						<ul class="fullpad">
-							<li class="helvetica text-white mb-3"><i class="bi bi-clock"></i> &nbsp;
-								Mon - Fri: 9:00 AM to
-								11:00 PM</li>
-							<li class="helvetica text-white pfnt"><i class="bi bi-clock"></i> &nbsp;
-								Saturday: 9:00 AM to 9:00 PM</li>
-
-							<li class="helvetica text-white mt-3 text-start"><i class="bi bi-clock"></i>&nbsp;
-								Sunday:
-								Holiday
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer-bottom d-flex justify-content-between">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-lg-12 text-center text-white">
-							<p class="helvetica my-5">Copyright © 2025, Demo Printz All rights reserved</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer> -->
 
 </body>
 

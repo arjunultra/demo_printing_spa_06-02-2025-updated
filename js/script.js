@@ -124,30 +124,39 @@ $(window).scroll(function () {
   }
 });
 
-// // navbar scrolling
-$(document).ready(() => {
+$(document).ready(function () {
   const topbar = $(".topbar");
   const navbar = $(".navbar");
   const spacer = $(".spacer");
   let lastScrollTop = 0;
 
-  $(window).on("scroll", () => {
+  $(window).on("scroll", function () {
     let scrollTop = $(this).scrollTop();
-    let topbarHeight = topbar.outerHeight();
 
-    if (scrollTop > 50) {
+    // Scroll Down: Hide topbar, show navbar
+    if (scrollTop > 450 && scrollTop > lastScrollTop) {
       topbar.css("transform", "translateY(-100%)"); // Hide topbar smoothly
-      navbar.addClass("fixed-nav");
+      navbar.addClass("fixed-nav"); // Ensure navbar stays in place
       spacer.show();
-    } else {
+    }
+    // Scroll Up: Slide navbar up and hide navbar
+    else if (scrollTop < lastScrollTop) {
       topbar.css("transform", "translateY(0)"); // Show topbar smoothly
-      navbar.removeClass("fixed-nav");
+      navbar.removeClass("fixed-nav"); // Make navbar slide up
       spacer.hide();
     }
 
-    lastScrollTop = scrollTop;
+    // When at the top of the page
+    if (scrollTop <= 0) {
+      topbar.css("transform", "translateY(0)"); // Show topbar at the top
+      navbar.removeClass("fixed-nav"); // Slide navbar back up
+      spacer.hide();
+    }
+
+    lastScrollTop = scrollTop; // Update lastScrollTop to current scroll position
   });
 });
+
 // owl carousel
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
@@ -171,25 +180,38 @@ $(document).ready(function () {
     },
   });
 });
-
+// scrollto top button
 document.addEventListener("DOMContentLoaded", function () {
-  let goTopBtn = document.getElementById("goTopBtn");
+  const progressWrap = document.querySelector(".progress-wrap");
+  const goTopBtn = document.getElementById("goTopBtn");
+  const offset = 50; // When to show the progress circle
 
-  window.onscroll = function () {
-    if (window.scrollY > 300) {
-      goTopBtn.classList.add("show");
+  function updateProgress() {
+    const scroll = window.scrollY;
+    const height = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scroll / height) * 100;
+    progressWrap.style.setProperty("--scroll", `${progress}%`);
+  }
+
+  window.addEventListener("scroll", function () {
+    updateProgress(); // Update circular progress fill
+
+    if (window.scrollY > offset) {
+      progressWrap.classList.add("active-progress"); // Show progress wrap
+      goTopBtn.classList.add("show"); // Show button
     } else {
+      progressWrap.classList.remove("active-progress");
       goTopBtn.classList.remove("show");
     }
-  };
+  });
 
-  goTopBtn.onclick = function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  goTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  updateProgress(); // Initialize on page load
 });
+
 // Function to scroll to section and update the active class
 function scrollToSection(sectionId, offset = 0, event = null) {
   if (event) event.preventDefault(); // Prevent default anchor behavior
@@ -259,5 +281,16 @@ document.querySelectorAll(".nav-link").forEach(function (link) {
   link.addEventListener("click", function (event) {
     // Add the offset you want here, such as 60px to adjust the scroll position
     scrollToSection(this.getAttribute("href").substring(1), 60, event);
+  });
+});
+// tab section prevent scrolling
+$(document).ready(function () {
+  $("#serviceTab a").on("click", function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    $(this).tab("show"); // Show the clicked tab
+    // console.log("hello");
+
+    // Prevent adding hash to URL
+    history.replaceState(null, null, window.location.pathname);
   });
 });

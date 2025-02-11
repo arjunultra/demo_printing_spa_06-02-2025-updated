@@ -1,3 +1,7 @@
+// main heading
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+// small font
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --color2: #fd6145;
   --color3: #888483;
@@ -62,7 +66,6 @@ p {
   padding: 0 !important;
   margin: 0 !important;
 }
-
 .w0 {
   width: 0%;
 }
@@ -208,6 +211,9 @@ p {
 
 // navbar
 .navbar-light {
+  opacity: 1;
+  transform: translateY(0); /* Start with navbar in its normal position */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transitions for opacity and slide */
   .bi.bi-list.nav-icon {
     color: #fff;
   }
@@ -244,6 +250,8 @@ p {
   width: 100%;
   z-index: 1000;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transform: translateY(0); /* It stays in place when sticky */
 }
 
 .navbar-brand {
@@ -1445,6 +1453,65 @@ section.contact-section {
     }
   }
 }
+// cta 2
+section.infra-section {
+  .container-fluid {
+    background-image: url("../images/infra-bg.webp");
+    background-color: #00000080;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px 0;
+    width: auto;
+    position: relative;
+
+    .text-container {
+      h3 {
+        color: #faf168 !important;
+      }
+      p {
+        max-width: 85%;
+      }
+      a.theme-btn {
+        position: relative;
+        background: linear-gradient(0deg, #fd6146, #fb7a43 50%);
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 800;
+        font-family: "Urbanist", sans-serif;
+        text-align: center;
+        padding: 14px 30px;
+        text-transform: uppercase;
+        border-radius: 35px;
+        color: #fff !important;
+        z-index: 1;
+        transition: all 500ms ease;
+
+        // Fixing the hover effect
+        &::before {
+          position: absolute;
+          content: "";
+          width: 0%;
+          height: 100%;
+          left: 0px;
+          top: 0px;
+          background: linear-gradient(0deg, #fb7a43, #fd6146 50%);
+          z-index: -1;
+          transition: all 500ms ease;
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 
 .footer {
   a {
@@ -1484,7 +1551,7 @@ section.contact-section {
   background-color: var(--color1) !important;
   color: #1a1a1a;
   padding: 10px 0;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 .marquee {
   width: 100%;
@@ -1519,45 +1586,83 @@ section.contact-section {
   transform: translate(-50%, -50%) scale(1);
   animation: ripple 3s infinite;
 }
-div#top-btn {
-  position: fixed;
-  bottom: 8em;
-  right: 20px;
-  z-index: 10000;
-  .go-top {
-    width: 50px;
-    height: 50px;
-    background-color: var(--color2);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 
-    &:hover {
-      background-color: var(--color1);
-      color: #000;
-    }
-
-    &.show {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-      transition: 3s;
-    }
-  }
+.small-font {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color2) !important;
 }
+.main-heading {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #212121 !important;
+}
+/* Position the progress bar wrap and button */
+/* Position the progress wrap at the bottom-right */
+.progress-wrap {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border-radius: 50%;
+  z-index: 1000;
+  visibility: hidden;
+  transition: visibility 0.3s ease;
+}
+
+/* Circular progress bar (SVG Background) */
+.progress-wrap::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    var(--color2) var(--scroll, 0%),
+    rgba(0, 0, 0, 0.2) 0%
+  );
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Go to top button */
+.go-top {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the button when scrolling */
+.go-top.show {
+  opacity: 1;
+}
+
+/* Show the progress wrap after scrolling */
+.progress-wrap.active-progress {
+  visibility: visible;
+}
+
 .contact-main {
   padding: 50px 0;
   position: relative;
-  background: linear-gradient(180deg, #ff4328 0%, #faeddc 50%, #ff4328 100%);
+  background: #fff;
 
   .title {
     margin-bottom: 30px;
@@ -1574,7 +1679,7 @@ div#top-btn {
 
   .contact-form {
     padding: 20px;
-    background: var(--color1);
+    background: #f5f6fa;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 
@@ -1584,10 +1689,17 @@ div#top-btn {
 
     input,
     textarea {
+      border: none;
+      outline: none;
       width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
+      height: 68px;
+      border-radius: 35px;
+      background: #fff;
+      color: #757575;
+      font-size: 16px;
+      padding-left: 50px;
+      margin-bottom: 20px;
+      display: block;
     }
 
     button {
@@ -1636,11 +1748,31 @@ div#top-btn {
       margin-top: 10px;
 
       a {
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        color: #000;
         font-size: 18px;
-        color: #333;
-        transition: color 0.3s ease;
-        &:hover {
-          color: var(--color2);
+        line-height: 59px;
+        text-align: center;
+        line-height: 59px;
+        margin-top: 10px;
+        &:nth-child(1) {
+          background: #fec931;
+          color: aliceblue;
+          box-shadow: 50px #000;
+        }
+        &:nth-child(2) {
+          background: pink;
+          color: white;
+        }
+        &:nth-child(3) {
+          background: #17a2b8;
+          color: white;
+        }
+        &:nth-child(4) {
+          background: #dc3545;
+          color: white;
         }
       }
     }
@@ -1674,6 +1806,7 @@ div#top-btn {
   }
   // index third section
   section.about-section {
+    overflow-x: hidden;
     .highlights-list {
       li a {
         font-size: 0.7rem;
